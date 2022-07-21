@@ -1,19 +1,16 @@
-//
-//  ViewController.swift
-//  ProductRecognitionSample
-//
-//  Created by Ivan Martinović on 21.07.2022..
-//
-
 import UIKit
+import InStoreDiscoverySDK
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func openSinglePhoto(_ sender: Any) {
+        let singlePhotoVC = SinglePhotoVC()
+        singlePhotoVC.modalPresentationStyle = .fullScreen
+        self.present(singlePhotoVC, animated: true)
+    }
 }
-

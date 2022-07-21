@@ -13,7 +13,23 @@
 		AFA61855288968E30027F640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA61853288968E30027F640 /* Main.storyboard */; };
 		AFA61857288968E40027F640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA61856288968E40027F640 /* Assets.xcassets */; };
 		AFA6185A288968E40027F640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA61858288968E40027F640 /* LaunchScreen.storyboard */; };
+		AFA6187028896E830027F640 /* InStoreDiscoverySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA6186F28896E830027F640 /* InStoreDiscoverySDK.xcframework */; };
+		AFA6187128896E830027F640 /* InStoreDiscoverySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFA6186F28896E830027F640 /* InStoreDiscoverySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFA6186E28896DD90027F640 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFA6187128896E830027F640 /* InStoreDiscoverySDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AFA6184A288968E30027F640 /* ProductRecognitionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductRecognitionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		AFA61856288968E40027F640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA61859288968E40027F640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA6185B288968E40027F640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA6186F28896E830027F640 /* InStoreDiscoverySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = InStoreDiscoverySDK.xcframework; path = "../../../XCode/product-recognition-ios/InStoreDiscoverySDK/InStoreDiscoverySDK/build/InStoreDiscoverySDK.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA6187028896E830027F640 /* InStoreDiscoverySDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				AFA6184C288968E30027F640 /* ProductRecognitionSample */,
 				AFA6184B288968E30027F640 /* Products */,
+				AFA6186628896CCC0027F640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = ProductRecognitionSample;
 			sourceTree = "<group>";
 		};
+		AFA6186628896CCC0027F640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFA6186F28896E830027F640 /* InStoreDiscoverySDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				AFA61846288968E30027F640 /* Sources */,
 				AFA61847288968E30027F640 /* Frameworks */,
 				AFA61848288968E30027F640 /* Resources */,
+				AFA6186E28896DD90027F640 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
