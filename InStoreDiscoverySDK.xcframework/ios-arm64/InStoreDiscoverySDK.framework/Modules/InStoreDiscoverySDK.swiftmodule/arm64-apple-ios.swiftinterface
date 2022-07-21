@@ -1,0 +1,292 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name InStoreDiscoverySDK
+import ARKit
+import AVFoundation
+import Foundation
+@_exported import InStoreDiscoverySDK
+import Security
+import Swift
+import UIKit
+import VideoToolbox
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PromoListView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var configuration: InStoreDiscoverySDK.PromoListConfiguration {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension InStoreDiscoverySDK.PromoListView : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+public struct ProductInfo {
+  public let productData: InStoreDiscoverySDK.ProductsResponse.Product
+  public let promotion: InStoreDiscoverySDK.ProductsResponse.PromotionDisplay?
+}
+public class DetectionResult {
+  final public let id: Swift.UInt
+  final public let typeOfDetection: Swift.Int
+  final public let score: Swift.Float
+  final public let left: CoreGraphics.CGFloat
+  final public let right: CoreGraphics.CGFloat
+  final public let top: CoreGraphics.CGFloat
+  final public let bottom: CoreGraphics.CGFloat
+  public init(id: Swift.UInt, typeOfDetection: Swift.Int, score: Swift.Float, left: CoreGraphics.CGFloat, right: CoreGraphics.CGFloat, top: CoreGraphics.CGFloat, bottom: CoreGraphics.CGFloat)
+  public var width: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  public var height: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  public var center: CoreGraphics.CGPoint {
+    get
+    set
+  }
+  public var rect: CoreGraphics.CGRect {
+    get
+    set
+  }
+  @objc deinit
+}
+public struct PromoIndicatorConfiguration {
+  public var contentBackgroundColor: UIKit.UIColor
+  public var image: UIKit.UIImage?
+  public var imageTintColor: UIKit.UIColor
+  public var pulseAnimationDuration: CoreGraphics.CGFloat
+  public var pulseTintColor: UIKit.UIColor
+  public var resizeAnimationDuration: CoreGraphics.CGFloat
+  public init()
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class GradientBackgroundView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open class var layerClass: Swift.AnyClass {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SinglePhotoVC : UIKit.UIViewController, AVFoundation.AVCapturePhotoCaptureDelegate, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @_Concurrency.MainActor(unsafe) public var noPromoBackgroundColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var noPromoFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var noPromoText: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var noPromoTextColor: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var shutterButtonImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var shutterButtonTint: UIKit.UIColor {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var resultViewConfiguration: InStoreDiscoverySDK.ResultViewConfiguration
+  @_Concurrency.MainActor(unsafe) public var capturedImageURL: Foundation.URL? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var captureRegion: CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) public var didCaptureImage: ((Foundation.URL) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var didReceiveResults: (([InStoreDiscoverySDK.ProductInfo], Foundation.URL?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @_Concurrency.MainActor(unsafe) @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVFoundation.AVCapturePhoto, error: Swift.Error?)
+  @_Concurrency.MainActor(unsafe) @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, willCapturePhotoFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
+  @_Concurrency.MainActor(unsafe) public func clearAllCapturedImagesFromDisk(okTitle: Swift.String?, okMesssage: Swift.String?, failedTitle: Swift.String?, failedMessage: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct PromoBannerConfiguration {
+  public var contentBackgroundColor: UIKit.UIColor
+  public var detailFont: UIKit.UIFont?
+  public var detailTextColor: UIKit.UIColor
+  public var highlightedBackgroundColor: UIKit.UIColor
+  public var highlightedFont: UIKit.UIFont?
+  public var highlightedTextColor: UIKit.UIColor
+  public var photoContentMode: UIKit.UIView.ContentMode
+  public var tagBackgroundColor: UIKit.UIColor
+  public var tagImage: UIKit.UIImage?
+  public var tagTintColor: UIKit.UIColor
+  public var titleFont: UIKit.UIFont?
+  public var titleTextColor: UIKit.UIColor
+  public init()
+}
+@_hasMissingDesignatedInitializers final public class AuthManager {
+  public static let shared: InStoreDiscoverySDK.AuthManager
+  final public func loadAuthTokenForCurrentDevice(licenseKey: Swift.String, completion: ((_ success: Swift.Bool) -> Swift.Void)? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PromoBanner : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var configuration: InStoreDiscoverySDK.PromoBannerConfiguration {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+public struct ResultViewConfiguration {
+  public var promoIndicatorConfiguration: InStoreDiscoverySDK.PromoIndicatorConfiguration
+  public var promoBannerConfiguration: InStoreDiscoverySDK.PromoBannerConfiguration
+  public var promoListConfiguration: InStoreDiscoverySDK.PromoListConfiguration
+  public var promoDetailsConfiguration: InStoreDiscoverySDK.PromoDetailsConfiguration
+  public var scanAgainConfiguration: InStoreDiscoverySDK.ScanAgainConfiguration
+  public init()
+}
+public struct PromoDetailsConfiguration {
+  public var cardBackgroundColor: UIKit.UIColor
+  public var detailBorderColor: UIKit.UIColor
+  public var detailHeaderIcon: UIKit.UIImage?
+  public var detailHeaderIconTintColor: UIKit.UIColor
+  public var detailHeaderFont: UIKit.UIFont?
+  public var detailHeaderText: Swift.String
+  public var detailHeaderTextColor: UIKit.UIColor
+  public var mainDetailFont: UIKit.UIFont?
+  public var mainDetailTextColor: UIKit.UIColor
+  public var limitationDetailFont: UIKit.UIFont?
+  public var limitationDetailTextColor: UIKit.UIColor
+  public var dismissButtonImage: UIKit.UIImage?
+  public var dismissButtonSize: CoreGraphics.CGSize
+  public var dismissButtonTintColor: UIKit.UIColor
+  public var highlightedBackgroundColor: UIKit.UIColor
+  public var highlightedFont: UIKit.UIFont?
+  public var highlightedTextColor: UIKit.UIColor
+  public var photoContentMode: UIKit.UIView.ContentMode
+  public var tagBackgroundColor: UIKit.UIColor
+  public var tagImage: UIKit.UIImage?
+  public var tagTintColor: UIKit.UIColor
+  public var titleFont: UIKit.UIFont?
+  public var titleTextColor: UIKit.UIColor
+  public init()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ScanAgainButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public var scanAgainConfiguration: InStoreDiscoverySDK.ScanAgainConfiguration {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+public struct PromoListConfiguration {
+  public var cardBackgroundColor: UIKit.UIColor
+  public var cardHandleBarColor: UIKit.UIColor
+  public var summaryFont: UIKit.UIFont?
+  public var summaryTextColor: UIKit.UIColor
+  public var cellConfiguration: InStoreDiscoverySDK.PromoListCellConfiguration
+  public init()
+}
+public class FeaturesExtractor {
+  weak public var delegate: InStoreDiscoverySDK.FeaturesExtractorDelegate?
+  public init(arSession: ARKit.ARSession, timeInterval: Foundation.TimeInterval)
+  @objc deinit
+}
+public protocol FeaturesExtractorDelegate : AnyObject {
+  func featuresExtractor(frame: ARKit.ARFrame, features: InStoreDiscoverySDK.Features)
+  func featuresExtractor(lastProcessingTime: Swift.UInt64)
+}
+public struct ProductsResponse : Swift.Decodable {
+  public struct Product : Swift.Decodable {
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct PromotionDisplay : Swift.Decodable {
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct PromoListCellConfiguration {
+  public var contentBackgroundColor: UIKit.UIColor
+  public var detailFont: UIKit.UIFont?
+  public var detailTextColor: UIKit.UIColor
+  public var highlightedBackgroundColor: UIKit.UIColor
+  public var highlightedFont: UIKit.UIFont?
+  public var highlightedTextColor: UIKit.UIColor
+  public var photoContentMode: UIKit.UIView.ContentMode
+  public var tagBackgroundColor: UIKit.UIColor
+  public var tagImage: UIKit.UIImage?
+  public var tagTintColor: UIKit.UIColor
+  public var titleFont: UIKit.UIFont?
+  public var titleTextColor: UIKit.UIColor
+  public init()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ResultVC : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var configuration: InStoreDiscoverySDK.ResultViewConfiguration
+  @_Concurrency.MainActor(unsafe) public var detectedProducts: [InStoreDiscoverySDK.ProductInfo]
+  @_Concurrency.MainActor(unsafe) public var didReceiveProducts: (([InStoreDiscoverySDK.ProductInfo]) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var scanAgainButton: InStoreDiscoverySDK.ScanAgainButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PromoIndicator : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var configuration: InStoreDiscoverySDK.PromoIndicatorConfiguration {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+public struct SDKConfiguration {
+  public static var shared: InStoreDiscoverySDK.SDKConfiguration
+  public var singlePhotoBoundingBoxesToShow: InStoreDiscoverySDK.SDKConfiguration.SinglePhotoBoundingBoxesToShow
+  public enum SinglePhotoBoundingBoxesToShow {
+    case rawBoundingBoxes
+    case trackingBoxes
+    public static func == (a: InStoreDiscoverySDK.SDKConfiguration.SinglePhotoBoundingBoxesToShow, b: InStoreDiscoverySDK.SDKConfiguration.SinglePhotoBoundingBoxesToShow) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public class ContoursExtractor {
+  weak public var delegate: InStoreDiscoverySDK.ContoursExtractorDelegate?
+  public init(arSession: ARKit.ARSession, timeInterval: Foundation.TimeInterval)
+  @objc deinit
+}
+public protocol ContoursExtractorDelegate : AnyObject {
+  func contoursExtractor(frame: ARKit.ARFrame, contoursImage: UIKit.UIImage)
+  func contoursExtractor(lastProcessingTime: Swift.UInt64)
+}
+public struct ScanAgainConfiguration {
+  public var navigationBarColor: UIKit.UIColor
+  public var borderColor: UIKit.UIColor
+  public var borderWidth: CoreGraphics.CGFloat
+  public var borderGap: CoreGraphics.CGFloat
+  public var contentBackgroundColor: UIKit.UIColor
+  public var hideBorder: Swift.Bool
+  public var iconImage: UIKit.UIImage?
+  public var iconTintColor: UIKit.UIColor
+  public var text: Swift.String
+  public var textFont: UIKit.UIFont?
+  public var textColor: UIKit.UIColor
+  public init()
+}
+extension InStoreDiscoverySDK.SDKConfiguration.SinglePhotoBoundingBoxesToShow : Swift.Equatable {}
+extension InStoreDiscoverySDK.SDKConfiguration.SinglePhotoBoundingBoxesToShow : Swift.Hashable {}
