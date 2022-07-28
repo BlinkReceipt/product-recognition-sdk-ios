@@ -24,3 +24,15 @@ SDK package contains Product Recognition framework and sample apps which demonst
 ## Sample apps
 
 Under [Samples](Samples) directory, you can find a simple demo app that is using our SDK. Some options are used and presented. 
+
+## Getting Started
+### Set Up License Key for Authentication
+```
+func application(_ application: UIApplication, didFinishLaunchingWithOptions
+                 launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+  AuthManager.shared.loadAuthTokenForCurrentDevice(licenseKey: "EhWw2Ji7VqnwX55z")
+  
+  return true
+}
+```
