@@ -42,6 +42,28 @@ let singlePhotoVC = SinglePhotoVC()
 singlePhotoVC.modalPresentationStyle = .fullScreen
 self.present(singlePhotoVC, animated: true)
 ```
+_Callback that returns the URL of the captured image saved locally._
+```swift
+singlePhotoVC.didCaptureImage = { url in
+  // ...
+}
+```
+_Callback that returns detected products with promo details and the URL of the captured image._
+```swift
+singlePhotoVC.didReceiveResults = { (products, imageURL) in
+  // ...
+}
+```
+_Read-only variable that returns the URL of the latest captured image._
+```swift
+let url = singlePhotoVC.capturedImageURL
+```
+_Function that deletes all the captured images saved locally in the 'Images' folder._
+```swift
+singlePhotoVC.clearAllCapturedImagesFromDisk(okTitle: nil, okMesssage: nil,
+                                             failedTitle: nil, failedMessage: nil)
+```
+
 ## Customizable UI
 ### Capture View
 > Default || Custom
