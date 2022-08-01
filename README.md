@@ -36,6 +36,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions
   return true
 }
 ```
+### Add to Info.plist
+| Key | Value |
+| --- | --- |
+| Privacy - Camera Usage Description | Camera access is needed to capture images of products |
 ### Usage
 ```swift
 let singlePhotoVC = SinglePhotoVC()
@@ -73,10 +77,6 @@ singlePhotoVC.clearAllCapturedImagesFromDisk(okTitle: nil, okMesssage: nil,
 // When captureRegion is not set, the entire screen is the default capture region
 singlePhotoVC.captureRegion = CGRect(x: 100, y: 100, width: 200, height: 600)
 // Custom UI elements
-singlePhotoVC.noPromoBackgroundColor = UIColor.orange
-singlePhotoVC.noPromoFont = UIFont.boldSystemFont(ofSize: 15)
-singlePhotoVC.noPromoText = "There's no promo!"
-singlePhotoVC.noPromoTextColor = UIColor.yellow
 singlePhotoVC.shutterButtonImage = UIImage(systemName: "camera.circle.fill",
                                            withConfiguration: UIImage.SymbolConfiguration(pointSize: 80))
 singlePhotoVC.shutterButtonTint = UIColor.green
@@ -87,6 +87,14 @@ var config = ResultViewConfiguration()
 // Set configuration here
 // ...
 singlePhotoVC.resultViewConfiguration = config
+```
+#### No Promo Label
+> _Momentarily displayed when no promo was detected._
+```swift
+config.noPromoConfiguration.contentBackgroundColor = UIColor.blue
+config.noPromoConfiguration.textColor = UIColor.yellow
+config.noPromoConfiguration.font = UIFont.italicSystemFont(ofSize: 20)
+config.noPromoConfiguration.text = "There's no promotion. Please try again."
 ```
 #### Promo Indicator
 > _The icon placed on top of a detected product with promotion._
