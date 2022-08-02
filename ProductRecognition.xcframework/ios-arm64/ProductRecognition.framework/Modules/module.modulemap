@@ -1,0 +1,11 @@
+framework module ProductRecognition {
+  umbrella header "ProductRecognition.h"
+
+  export *
+  module * { export * }
+}
+
+module ProductRecognition.Swift {
+    header "ProductRecognition-Swift.h"
+    requires objc
+}
