@@ -17,6 +17,13 @@ SDK package contains Product Recognition framework and sample apps which demonst
 ### Carthage
 
 ### Swift Package Manager
+1. In Xcode, install ProductRecognition SDK by navigating to __File > Add Packages__
+2. Go to _Search or Enter Package URL_ at the top-right search bar of the window that appears, then type:
+```swift
+https://github.com/BlinkReceipt/product-recognition-sdk-ios.git
+```
+3. Select __Branch__ on the _Dependency Rule_ and type `main`
+4. Click __Add Package__
 
 ### Manually
 
@@ -36,8 +43,14 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions
   return true
 }
 ```
+### Add to Info.plist
+| Key | Value |
+| --- | --- |
+| Privacy - Camera Usage Description | Camera access is needed to capture images of products |
 ### Usage
 ```swift
+import ProductRecognition
+
 let singlePhotoVC = SinglePhotoVC()
 singlePhotoVC.modalPresentationStyle = .fullScreen
 self.present(singlePhotoVC, animated: true)
@@ -66,17 +79,13 @@ singlePhotoVC.clearAllCapturedImagesFromDisk(okTitle: nil, okMesssage: nil,
 
 ## Customizable UI
 ### Capture View
-> Default || Custom
-
-![Screenshot_Capture_Default](Resources/screenshot-capture-default.png) ![Screenshot_Capture_Custom](Resources/screenshot-capture-custom.png)
+| Default | Custom |
+| --- | --- |
+| ![Screenshot_Capture_Default](Resources/screenshot-capture-default.png) | ![Screenshot_Capture_Custom](Resources/screenshot-capture-custom.png) |
 ```swift
 // When captureRegion is not set, the entire screen is the default capture region
 singlePhotoVC.captureRegion = CGRect(x: 100, y: 100, width: 200, height: 600)
 // Custom UI elements
-singlePhotoVC.noPromoBackgroundColor = UIColor.orange
-singlePhotoVC.noPromoFont = UIFont.boldSystemFont(ofSize: 15)
-singlePhotoVC.noPromoText = "There's no promo!"
-singlePhotoVC.noPromoTextColor = UIColor.yellow
 singlePhotoVC.shutterButtonImage = UIImage(systemName: "camera.circle.fill",
                                            withConfiguration: UIImage.SymbolConfiguration(pointSize: 80))
 singlePhotoVC.shutterButtonTint = UIColor.green
@@ -88,8 +97,24 @@ var config = ResultViewConfiguration()
 // ...
 singlePhotoVC.resultViewConfiguration = config
 ```
+#### No Promo Label
+> _Momentarily displayed when no promo was detected._
+
+| Default | Custom |
+| --- | --- |
+| ![No_Promo_Default](Resources/screenshot-no-promo-default.png) | ![No_Promo_Custom](Resources/screenshot-no-promo-custom.png) |
+```swift
+config.noPromoConfiguration.contentBackgroundColor = UIColor.blue
+config.noPromoConfiguration.textColor = UIColor.yellow
+config.noPromoConfiguration.font = UIFont.italicSystemFont(ofSize: 20)
+config.noPromoConfiguration.text = "There's no promotion. Please try again."
+```
 #### Promo Indicator
 > _The icon placed on top of a detected product with promotion._
+
+| Default | Custom |
+| --- | --- |
+| ![Tags_Default](Resources/screenshot-tags-default.png) | ![Tags_Custom](Resources/screenshot-tags-custom.png) |
 ```swift
 config.promoIndicatorConfiguration.image = UIImage(systemName: "tag.circle")
 config.promoIndicatorConfiguration.contentBackgroundColor = UIColor.blue
@@ -100,6 +125,10 @@ config.promoIndicatorConfiguration.resizeAnimationDuration = 0.1
 ```
 #### Promo Banner
 > _Displayed when a promo indicator is selected._
+
+| Default | Custom |
+| --- | --- |
+| ![Banner_Default](Resources/screenshot-banner-default.png) | ![Banner_Custom](Resources/screenshot-banner-custom.png) |
 ```swift
 config.promoBannerConfiguration.contentBackgroundColor = UIColor.lightGray
 config.promoBannerConfiguration.photoContentMode = UIView.ContentMode.scaleToFill
@@ -116,6 +145,10 @@ config.promoBannerConfiguration.tagTintColor = UIColor.green
 ```
 #### Scan Again Button and Navigation Bar
 > _Navigation bar at the bottom that contains the Scan Again button._
+
+| Default | Custom |
+| --- | --- |
+| ![Scan_Again_Default](Resources/screenshot-scan-again-default.png) | ![Scan_Again_Custom](Resources/screenshot-scan-again-custom.png) |
 ```swift
 config.scanAgainConfiguration.navigationBarColor = UIColor.gray
 config.scanAgainConfiguration.borderColor = UIColor.red
@@ -131,6 +164,10 @@ config.scanAgainConfiguration.textColor = UIColor.green
 ```
 #### Promo List / Card
 > _Displays summary of promotions when collapsed. Shows full list of promotions when expanded._
+
+| Default | Custom |
+| --- | --- |
+| ![List_Default](Resources/screenshot-list-default.png) | ![List_Custom](Resources/screenshot-list-custom.png) |
 ```swift
 config.promoListConfiguration.cardBackgroundColor = UIColor.darkGray
 config.promoListConfiguration.cardHandleBarColor = UIColor.white
@@ -151,10 +188,14 @@ config.promoListConfiguration.cellConfiguration.titleFont = UIFont.italicSystemF
 ```
 #### Promo Details
 > _Displayed when a promo banner is tapped or a row is selected from the promo list._
+
+| Default | Custom |
+| --- | --- |
+| ![Details_Default](Resources/screenshot-details-default.png) | ![Details_Custom](Resources/screenshot-details-custom.png) |
 ```swift
 config.promoDetailsConfiguration.cardBackgroundColor = UIColor.black
 config.promoDetailsConfiguration.detailBorderColor = UIColor.red
-config.promoDetailsConfiguration.detailHeaderIcon = UIImage(named: "tag.circle")
+config.promoDetailsConfiguration.detailHeaderIcon = UIImage(systemName: "tag.circle")
 config.promoDetailsConfiguration.detailHeaderIconTintColor = UIColor.green
 config.promoDetailsConfiguration.detailHeaderFont = UIFont.monospacedSystemFont(ofSize: 14, weight: .bold)
 config.promoDetailsConfiguration.detailHeaderText = "More Details..."
