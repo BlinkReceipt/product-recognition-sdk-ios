@@ -17,6 +17,13 @@ SDK package contains Product Recognition framework and sample apps which demonst
 ### Carthage
 
 ### Swift Package Manager
+1. In Xcode, install ProductRecognition SDK by navigating to __File > Add Packages__
+2. Go to _Search or Enter Package URL_ at the top-right search bar of the window that appears, then type:
+```swift
+https://github.com/BlinkReceipt/product-recognition-sdk-ios.git
+```
+3. Select __Branch__ on the _Dependency Rule_ and type `main`
+4. Click __Add Package__
 
 ### Manually
 
@@ -42,6 +49,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions
 | Privacy - Camera Usage Description | Camera access is needed to capture images of products |
 ### Usage
 ```swift
+import ProductRecognition
+
 let singlePhotoVC = SinglePhotoVC()
 singlePhotoVC.modalPresentationStyle = .fullScreen
 self.present(singlePhotoVC, animated: true)
