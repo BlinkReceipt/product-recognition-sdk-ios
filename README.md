@@ -34,7 +34,27 @@ https://github.com/BlinkReceipt/product-recognition-sdk-ios.git
 4. Click __Add Package__
 
 ### Manually
+#### Embedded Framework
+If you prefer not to use any dependency managers, you can integrate ProductRecognition into your project manually.
+1. If you haven't initialized your project as a git repository, open __Terminal__ and go to the root of your project directory. Run this command:
+```
+$ git init
+```
+2. Add ProductRecognition as a [submodule](https://git-scm.com/docs/git-submodule) by running the command:
+```
+$ git submodule add https://github.com/BlinkReceipt/product-recognition-sdk-ios.git
+```
+3. Open the new `product-recognition-sdk-ios` folder and drag the `ProductRecognition.xcframework` into the Project Navigator of your application's Xcode project.
+4. Select the `ProductRecognition.xcframework` in the Project Navigator and verify the deployment target matches that of your application target.
+5. Next, select your application project in the Project Navigator (blue project icon) to navigate to the target configuration window and select the application target under the ***"Targets"*** heading in the sidebar.
+6. In the tab bar at the top of that window, open the ***"General"*** panel and click on the `+` button under the ***"Frameworks, Libraries, and Embedded Content"*** section.
+7. On the window that shows, search for "ProductRecognition". Select `ProductRecognition.xcframework` from the list then click ***Add***.
+8. On the table's ***"Embed"*** column, make sure that `Embed & Sign` is selected.
 
+| Name | Embed |
+| --- | --- |
+| ProductRecognition.xcframework | Embed & Sign |
+9. Now you're good to go!
 
 ## Sample apps
 
