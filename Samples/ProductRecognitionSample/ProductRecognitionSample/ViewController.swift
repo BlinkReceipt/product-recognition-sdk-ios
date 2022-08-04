@@ -1,5 +1,5 @@
 import UIKit
-import InStoreDiscoverySDK
+import ProductRecognition
 
 class ViewController: UIViewController {
     

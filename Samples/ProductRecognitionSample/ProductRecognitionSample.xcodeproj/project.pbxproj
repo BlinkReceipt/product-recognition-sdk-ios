@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026DADE9289BAB1D00EE23E2 /* ProductRecognition.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026DADE7289BAB1400EE23E2 /* ProductRecognition.xcframework */; };
+		026DADEA289BAB1D00EE23E2 /* ProductRecognition.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 026DADE7289BAB1400EE23E2 /* ProductRecognition.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFA6184E288968E30027F640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6184D288968E30027F640 /* AppDelegate.swift */; };
 		AFA61850288968E30027F640 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA6184F288968E30027F640 /* SceneDelegate.swift */; };
 		AFA61852288968E30027F640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA61851288968E30027F640 /* ViewController.swift */; };
 		AFA61855288968E30027F640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA61853288968E30027F640 /* Main.storyboard */; };
 		AFA61857288968E40027F640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA61856288968E40027F640 /* Assets.xcassets */; };
 		AFA6185A288968E40027F640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA61858288968E40027F640 /* LaunchScreen.storyboard */; };
-		AFA6187528897B770027F640 /* InStoreDiscoverySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFA6187428897B770027F640 /* InStoreDiscoverySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AFA6186E28896DD90027F640 /* Embed Frameworks */ = {
+		026DADEB289BAB1D00EE23E2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AFA6187528897B770027F640 /* InStoreDiscoverySDK.xcframework in Embed Frameworks */,
+				026DADEA289BAB1D00EE23E2 /* ProductRecognition.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		026DADE7289BAB1400EE23E2 /* ProductRecognition.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ProductRecognition.xcframework; path = ../../ProductRecognition.xcframework; sourceTree = "<group>"; };
 		AFA6184A288968E30027F640 /* ProductRecognitionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductRecognitionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA6184D288968E30027F640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFA6184F288968E30027F640 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +41,6 @@
 		AFA61856288968E40027F640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA61859288968E40027F640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA6185B288968E40027F640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFA6187428897B770027F640 /* InStoreDiscoverySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = InStoreDiscoverySDK.xcframework; path = ../../InStoreDiscoverySDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026DADE9289BAB1D00EE23E2 /* ProductRecognition.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +89,7 @@
 		AFA6186628896CCC0027F640 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFA6187428897B770027F640 /* InStoreDiscoverySDK.xcframework */,
+				026DADE7289BAB1400EE23E2 /* ProductRecognition.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,7 +104,7 @@
 				AFA61846288968E30027F640 /* Sources */,
 				AFA61847288968E30027F640 /* Frameworks */,
 				AFA61848288968E30027F640 /* Resources */,
-				AFA6186E28896DD90027F640 /* Embed Frameworks */,
+				026DADEB289BAB1D00EE23E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
