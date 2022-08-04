@@ -15,8 +15,16 @@ SDK package contains Product Recognition framework and sample apps which demonst
 ### CocoaPods
 
 ### Carthage
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks, but you retain full control over your project structure and setup. Carthage does not automatically modify your project files or your build settings.
+
+To integrate ProductRecognition into your Xcode project using Carthage, specify it in your `Cartfile`:
+```swift
+github "BlinkReceipt/product-recognition-sdk-ios"
+```
 
 ### Swift Package Manager
+The [Swift Package Manager](https://www.swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
+
 1. In Xcode, install ProductRecognition SDK by navigating to __File > Add Packages__
 2. Go to _Search or Enter Package URL_ at the top-right search bar of the window that appears, then type:
 ```swift
