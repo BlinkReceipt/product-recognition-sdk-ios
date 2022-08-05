@@ -72,23 +72,7 @@ public struct PromoIndicatorConfiguration {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SinglePhotoVC : UIKit.UIViewController, AVFoundation.AVCapturePhotoCaptureDelegate, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
-  @_Concurrency.MainActor(unsafe) public var noPromoBackgroundColor: UIKit.UIColor {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) public var noPromoFont: UIKit.UIFont? {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) public var noPromoText: Swift.String {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) public var noPromoTextColor: UIKit.UIColor {
-    get
-    set
-  }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SinglePhotoVC : UIKit.UIViewController, AVFoundation.AVCapturePhotoCaptureDelegate, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
   @_Concurrency.MainActor(unsafe) public var shutterButtonImage: UIKit.UIImage? {
     get
     set
@@ -104,16 +88,28 @@ public struct PromoIndicatorConfiguration {
   @_Concurrency.MainActor(unsafe) public var captureRegion: CoreGraphics.CGRect
   @_Concurrency.MainActor(unsafe) public var didCaptureImage: ((Foundation.URL) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) public var didReceiveResults: (([ProductRecognition.ProductInfo], Foundation.URL?) -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) open var shutterButton: UIKit.UIButton {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @_Concurrency.MainActor(unsafe) @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, willBeginCaptureFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
   @_Concurrency.MainActor(unsafe) @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVFoundation.AVCapturePhoto, error: Swift.Error?)
   @_Concurrency.MainActor(unsafe) @objc public func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, willCapturePhotoFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
   @_Concurrency.MainActor(unsafe) public func clearAllCapturedImagesFromDisk(okTitle: Swift.String?, okMesssage: Swift.String?, failedTitle: Swift.String?, failedMessage: Swift.String?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+public struct NoPromoConfiguration {
+  public var contentBackgroundColor: UIKit.UIColor
+  public var font: UIKit.UIFont?
+  public var text: Swift.String
+  public var textColor: UIKit.UIColor
+  public init()
 }
 public struct PromoBannerConfiguration {
   public var contentBackgroundColor: UIKit.UIColor
@@ -145,6 +141,7 @@ public struct PromoBannerConfiguration {
   @objc deinit
 }
 public struct ResultViewConfiguration {
+  public var noPromoConfiguration: ProductRecognition.NoPromoConfiguration
   public var promoIndicatorConfiguration: ProductRecognition.PromoIndicatorConfiguration
   public var promoBannerConfiguration: ProductRecognition.PromoBannerConfiguration
   public var promoListConfiguration: ProductRecognition.PromoListConfiguration
