@@ -12,13 +12,28 @@ SDK package contains Product Recognition framework and sample apps which demonst
 
 ## Installation
 
+
 ### CocoaPods
+[CocoaPods](https://cocoapods.org) is a dependency manager for Swift and Objective-C Cocoa projects. For usage and installation instructions, visit their website. Here is a sample barebones `Podfile` which imports the `ProductRecognition` pod:
+```shell
+#You must include this additional source as the BlinkEReceipt pod is hosted in a private spec repository
+source 'https://github.com/BlinkReceipt/PodSpecRepo.git'
+source 'https://cdn.cocoapods.org/'
+
+platform :ios, '13.0'
+
+target 'YourTarget' do
+  use_frameworks!
+
+  pod 'ProductRecognition'
+end
+```
 
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks, but you retain full control over your project structure and setup. Carthage does not automatically modify your project files or your build settings.
 
 To integrate the Product Recognition SDK into your Xcode project using Carthage, specify it in your `Cartfile`:
-```swift
+```shell
 binary "https://raw.githubusercontent.com/BlinkReceipt/product-recognition-sdk-ios/main/ProductRecognition.json" ~> 1.0
 ```
 After editing your `Cartfile`, run `carthage update --use-xcframeworks` and then add `ProductRecognition.xcframework` to your project. It should be located at `~/Carthage/Build/`.
@@ -38,11 +53,11 @@ https://github.com/BlinkReceipt/product-recognition-sdk-ios.git
 #### Embedded Framework
 If you prefer not to use any dependency managers, you can integrate the Product Recognition SDK into your project manually.
 1. If you haven't initialized your project as a git repository, open __Terminal__ and go to the root of your project directory. Run this command:
-```
+```shell
 $ git init
 ```
 2. Add ProductRecognition as a [submodule](https://git-scm.com/docs/git-submodule) by running the command:
-```
+```shell
 $ git submodule add https://github.com/BlinkReceipt/product-recognition-sdk-ios.git
 ```
 3. Open the new `product-recognition-sdk-ios` folder and drag the `ProductRecognition.xcframework` into the Project Navigator of your application's Xcode project.
