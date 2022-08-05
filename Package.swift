@@ -19,7 +19,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "ProductRecognition",
-            url: "https://github.com/BlinkReceipt/product-recognition-sdk-ios/releases/download/1.0.0/ProductRecognition.xcframework-1.0.0.zip",
-            checksum: b93c934eafa2645df9c68bcb986c5666512e5876cbc0bbb0c3fe92645cfcc526)
+            path: "ProductRecognition.xcframework"
+        )
     ]
 )
