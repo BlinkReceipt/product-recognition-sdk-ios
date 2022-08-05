@@ -285,8 +285,8 @@ SWIFT_CLASS("_TtC18ProductRecognition15ScanAgainButton")
 @class AVCaptureOutput;
 @class AVCaptureConnection;
 @class AVCapturePhotoOutput;
-@class AVCapturePhoto;
 @class AVCaptureResolvedPhotoSettings;
+@class AVCapturePhoto;
 
 SWIFT_CLASS("_TtC18ProductRecognition13SinglePhotoVC")
 @interface SinglePhotoVC : UIViewController <AVCapturePhotoCaptureDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
@@ -294,6 +294,7 @@ SWIFT_CLASS("_TtC18ProductRecognition13SinglePhotoVC")
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
+- (void)captureOutput:(AVCapturePhotoOutput * _Nonnull)output willBeginCaptureForResolvedSettings:(AVCaptureResolvedPhotoSettings * _Nonnull)resolvedSettings;
 - (void)captureOutput:(AVCapturePhotoOutput * _Nonnull)output didFinishProcessingPhoto:(AVCapturePhoto * _Nonnull)photo error:(NSError * _Nullable)error;
 - (void)captureOutput:(AVCapturePhotoOutput * _Nonnull)output willCapturePhotoForResolvedSettings:(AVCaptureResolvedPhotoSettings * _Nonnull)resolvedSettings;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
