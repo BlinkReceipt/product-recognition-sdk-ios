@@ -17,25 +17,26 @@ SDK package contains Product Recognition framework and sample apps which demonst
 ### Carthage
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks, but you retain full control over your project structure and setup. Carthage does not automatically modify your project files or your build settings.
 
-To integrate ProductRecognition into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate the Product Recognition SDK into your Xcode project using Carthage, specify it in your `Cartfile`:
 ```swift
-github "BlinkReceipt/product-recognition-sdk-ios"
+binary "https://raw.githubusercontent.com/BlinkReceipt/product-recognition-sdk-ios/main/ProductRecognition.json" ~> 1.0
 ```
+After editing your `Cartfile`, run `carthage update --use-xcframeworks` and then add `ProductRecognition.xcframework` to your project. It should be located at `~/Carthage/Build/`.
 
 ### Swift Package Manager
 The [Swift Package Manager](https://www.swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
-1. In Xcode, install ProductRecognition SDK by navigating to __File > Add Packages__
-2. Go to _Search or Enter Package URL_ at the top-right search bar of the window that appears, then type:
+1. In Xcode, install the Product Recognition SDK by navigating to ***File > Add Packages***
+2. Go to `Search or Enter Package URL` at the top-right search bar of the window that appears, then type:
 ```swift
 https://github.com/BlinkReceipt/product-recognition-sdk-ios.git
 ```
-3. Select __Branch__ on the _Dependency Rule_ and type `main`
-4. Click __Add Package__
+3. Select `Up to Next Major Version` on the ***"Dependency Rule"*** and type `1.0.0`
+4. Click ***Add Package***
 
 ### Manually
 #### Embedded Framework
-If you prefer not to use any dependency managers, you can integrate ProductRecognition into your project manually.
+If you prefer not to use any dependency managers, you can integrate the Product Recognition SDK into your project manually.
 1. If you haven't initialized your project as a git repository, open __Terminal__ and go to the root of your project directory. Run this command:
 ```
 $ git init
