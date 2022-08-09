@@ -262,3 +262,32 @@ config.promoDetailsConfiguration.tagTintColor = UIColor.green
 config.promoDetailsConfiguration.titleTextColor = UIColor.green
 config.promoDetailsConfiguration.titleFont = UIFont.italicSystemFont(ofSize: 18)
 ```
+
+### Subclassing
+If you would like to overlay images or set the area to be captured, try subclassing `SinglePhotoVC`.
+Here is a sample code of `SinglePhotoVC` subclassed as `CameraViewController`:
+```swift
+import ProductRecognition
+
+class CameraViewController: SinglePhotoVC {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // This adds a viewfinder icon at the center.
+        let image = UIImageView(image: UIImage(systemName: "plus.viewfinder",
+                                               withConfiguration: UIImage.SymbolConfiguration(pointSize: 100)))
+        self.view.addSubview(image)
+        image.center = self.view.center
+        
+        // This sets the capture region to 80% of the screen area, centered.
+        // The captured image in the capture region will then be displayed fullscreen in the result view.
+        let width = self.view.bounds.width * 0.8
+        let height = self.view.bounds.height * 0.8
+        self.captureRegion = CGRect(x: (self.view.frame.width - width)/2,
+                                    y: (self.view.frame.height - height)/2,
+                                    width: width,
+                                    height: height)
+    }
+}
+```
