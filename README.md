@@ -142,7 +142,19 @@ var config = ResultViewConfiguration()
 // ...
 singlePhotoVC.resultViewConfiguration = config
 ```
-#### No Promo Label
+#### Scanning Pop-up
+> _Displayed while scanning for promotions._
+
+| Default | Custom |
+| --- | --- |
+| ![Scanning_Default](Resources/screenshot-scanning-default.png) | ![Scanning_Custom](Resources/screenshot-scanning-custom.png) |
+```swift
+config.scanningConfiguration.contentBackgroundColor = UIColor.purple
+config.scanningConfiguration.textColor = UIColor.orange
+config.scanningConfiguration.font = UIFont.italicSystemFont(ofSize: 20)
+config.scanningConfiguration.text = "Scanning for promotions. Please wait for a moment..."
+``` 
+#### No Promo Pop-up
 > _Momentarily displayed when no promo was detected._
 
 | Default | Custom |
