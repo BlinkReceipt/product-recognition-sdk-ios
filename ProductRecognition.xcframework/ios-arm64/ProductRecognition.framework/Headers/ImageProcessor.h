@@ -30,6 +30,11 @@ typedef NS_ENUM(NSInteger, EmbedderVersionObjC) {
 
 - (instancetype _Nonnull) init:(DetectorVersionObjC)detectorVersionObjC embedderVersion:(EmbedderVersionObjC)embedderVersionObjC;
 
+- (instancetype _Nonnull) init:(DetectorVersionObjC)detectorVersionObjC
+               embedderVersion:(EmbedderVersionObjC)embedderVersionObjC
+                    licenseKey:(NSString *_Nonnull)licenseKeyObjC
+                      bundleId:(NSString *_Nonnull)bundleIdObjC;
+
 - (void) feedBuffer: (double) imageUid buffer: (CVPixelBufferRef _Nonnull) buffer withRotation: (CVPixelBufferOrientation) rotation withScoreThreshold: (float) scoreThreshold;
 
 - (ProcessingData* _Nonnull) getProcessingDataForImageUid: (double) imageUid;

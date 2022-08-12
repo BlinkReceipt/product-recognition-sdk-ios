@@ -79,6 +79,7 @@ Under [Samples](Samples) directory, you can find a simple demo app that is using
 
 ## Getting Started
 ### Set Up License Key for Authentication
+> _Use the `license key` associated with your app's `Bundle Identifier`._
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions
                  launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -100,23 +101,23 @@ let singlePhotoVC = SinglePhotoVC()
 singlePhotoVC.modalPresentationStyle = .fullScreen
 self.present(singlePhotoVC, animated: true)
 ```
-_Callback that returns the URL of the captured image saved locally._
+> _Callback that returns the URL of the captured image saved locally._
 ```swift
 singlePhotoVC.didCaptureImage = { url in
   // ...
 }
 ```
-_Callback that returns detected products with promo details and the URL of the captured image._
+> _Callback that returns detected products with promo details and the URL of the captured image._
 ```swift
 singlePhotoVC.didReceiveResults = { (products, imageURL) in
   // ...
 }
 ```
-_Read-only variable that returns the URL of the latest captured image._
+> _Read-only variable that returns the URL of the latest captured image._
 ```swift
 let url = singlePhotoVC.capturedImageURL
 ```
-_Function that deletes all the captured images saved locally in the 'Images' folder._
+> _Function that deletes all the captured images saved locally in the 'Images' folder._
 ```swift
 singlePhotoVC.clearAllCapturedImagesFromDisk(okTitle: nil, okMesssage: nil,
                                              failedTitle: nil, failedMessage: nil)
@@ -142,7 +143,19 @@ var config = ResultViewConfiguration()
 // ...
 singlePhotoVC.resultViewConfiguration = config
 ```
-#### No Promo Label
+#### Scanning Pop-up
+> _Displayed while scanning for promotions._
+
+| Default | Custom |
+| --- | --- |
+| ![Scanning_Default](Resources/screenshot-scanning-default.png) | ![Scanning_Custom](Resources/screenshot-scanning-custom.png) |
+```swift
+config.scanningConfiguration.contentBackgroundColor = UIColor.purple
+config.scanningConfiguration.textColor = UIColor.orange
+config.scanningConfiguration.font = UIFont.italicSystemFont(ofSize: 20)
+config.scanningConfiguration.text = "Scanning for promotions. Please wait for a moment..."
+``` 
+#### No Promo Pop-up
 > _Momentarily displayed when no promo was detected._
 
 | Default | Custom |
@@ -266,6 +279,9 @@ config.promoDetailsConfiguration.titleFont = UIFont.italicSystemFont(ofSize: 18)
 ### Subclassing
 If you would like to overlay images or set the area to be captured, try subclassing `SinglePhotoVC`.
 Here is a sample code of `SinglePhotoVC` subclassed as `CameraViewController`:
+
+![Subclass](Resources/screenshot-subclass.jpg)
+
 ```swift
 import ProductRecognition
 
@@ -288,6 +304,14 @@ class CameraViewController: SinglePhotoVC {
                                     y: (self.view.frame.height - height)/2,
                                     width: width,
                                     height: height)
+
+        // This draws a border around the capture region
+        let borderView = UIView(frame: self.captureRegion)
+        borderView.layer.borderWidth = 5
+        borderView.layer.borderColor = UIColor.darkGray.cgColor
+        // Insert it behind the shutter button
+        self.view.insertSubview(borderView,
+                                belowSubview: self.shutterButton)
     }
 }
 ```
