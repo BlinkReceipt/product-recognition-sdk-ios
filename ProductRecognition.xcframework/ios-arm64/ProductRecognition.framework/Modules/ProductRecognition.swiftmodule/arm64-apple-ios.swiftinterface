@@ -147,6 +147,7 @@ public struct ResultViewConfiguration {
   public var promoListConfiguration: ProductRecognition.PromoListConfiguration
   public var promoDetailsConfiguration: ProductRecognition.PromoDetailsConfiguration
   public var scanAgainConfiguration: ProductRecognition.ScanAgainConfiguration
+  public var scanningConfiguration: ProductRecognition.ScanningConfiguration
   public init()
 }
 public struct PromoDetailsConfiguration {
@@ -282,6 +283,13 @@ public struct ScanAgainConfiguration {
   public var iconTintColor: UIKit.UIColor
   public var text: Swift.String
   public var textFont: UIKit.UIFont
+  public var textColor: UIKit.UIColor
+  public init()
+}
+public struct ScanningConfiguration {
+  public var contentBackgroundColor: UIKit.UIColor
+  public var font: UIKit.UIFont?
+  public var text: Swift.String
   public var textColor: UIKit.UIColor
   public init()
 }

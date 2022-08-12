@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // REQUIRED
-        AuthManager.shared.loadAuthTokenForCurrentDevice(licenseKey: "EhWw2Ji7VqnwX55z")
+        AuthManager.shared.loadAuthTokenForCurrentDevice(licenseKey: "sRwAAAEnY29tLm1pY3JvYmxpbmsuUHJvZHVjdFJlY29nbml0aW9uU2FtcGxlukvgNbekkn6iACztWNRSEEEh1qAUP64rwZpVkNhSarqJLDbFXgwop9TJS6BLWq7knrcWCfMjWEjIXChYdWp1Ti/UmBLzAepsp1GRODaofoP/7VEElIs1vAr1mHcbeXrptc2CetZVV5ezBo9MWyqcEBeoAn2mLqEKWw5Cie9IRTrAbL74wiI=")
         
         return true
     }
