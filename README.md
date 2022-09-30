@@ -156,74 +156,74 @@ singlePhotoVC.stopCaptureSession()
 // When captureRegion is not set, the entire screen is the default capture region
 singlePhotoVC.captureRegion = CGRect(x: 100, y: 100, width: 200, height: 600)
 // Custom UI elements
-singlePhotoVC.shutterButtonImage = UIImage(systemName: "camera.circle.fill",
-                                           withConfiguration: UIImage.SymbolConfiguration(pointSize: 80))
-singlePhotoVC.shutterButtonTint = UIColor.green
+singlePhotoVC.shutterButton.setImage(UIImage(systemName: "camera.circle.fill",
+                                             withConfiguration: UIImage.SymbolConfiguration(pointSize: 80)),
+                                     for: .normal)
+singlePhotoVC.shutterButton.imageView?.tintColor = UIColor.green
 ```
 ### Result View and Sub-views
-```swift
-var config = ResultViewConfiguration()
-// Set configuration here
-// ...
-singlePhotoVC.resultViewConfiguration = config
-```
-#### Scanning Pop-up
-> _Displayed while scanning for promotions._
+#### Scan activity
+> _Displayed while scanning image for products._
 
 | Default | Custom |
 | --- | --- |
 | ![Scanning_Default](Resources/screenshot-scanning-default.png) | ![Scanning_Custom](Resources/screenshot-scanning-custom.png) |
 ```swift
-config.scanningConfiguration.contentBackgroundColor = UIColor.purple
-config.scanningConfiguration.textColor = UIColor.orange
-config.scanningConfiguration.font = UIFont.italicSystemFont(ofSize: 20)
-config.scanningConfiguration.text = "Scanning for promotions. Please wait for a moment..."
+ScanActivityConfiguration.shared.scanningText = "Scanning image. Please wait for a moment..."
+ScanActivityConfiguration.shared.noResultText = "No Result Text"
+ScanActivityConfiguration.shared.resultText = "Result Text"
+ScanActivityConfiguration.shared.contentBackgroundColor = UIColor.purple
+ScanActivityConfiguration.shared.font = UIFont.italicSystemFont(ofSize: 20)
+ScanActivityConfiguration.shared.textColor = UIColor.orange
 ``` 
-#### No Promo Pop-up
-> _Momentarily displayed when no promo was detected._
-
-| Default | Custom |
-| --- | --- |
-| ![No_Promo_Default](Resources/screenshot-no-promo-default.png) | ![No_Promo_Custom](Resources/screenshot-no-promo-custom.png) |
-```swift
-config.noPromoConfiguration.contentBackgroundColor = UIColor.blue
-config.noPromoConfiguration.textColor = UIColor.yellow
-config.noPromoConfiguration.font = UIFont.italicSystemFont(ofSize: 20)
-config.noPromoConfiguration.text = "There's no promotion. Please try again."
-```
-#### Promo Indicator
-> _The icon placed on top of a detected product with promotion._
+#### Result Indicator
+> _The icon placed on top of a detected product._
 
 | Default | Custom |
 | --- | --- |
 | ![Tags_Default](Resources/screenshot-tags-default.png) | ![Tags_Custom](Resources/screenshot-tags-custom.png) |
 ```swift
-config.promoIndicatorConfiguration.image = UIImage(systemName: "tag.circle")
-config.promoIndicatorConfiguration.contentBackgroundColor = UIColor.blue
-config.promoIndicatorConfiguration.imageTintColor = UIColor.yellow
-config.promoIndicatorConfiguration.pulseAnimationDuration = 0.5
-config.promoIndicatorConfiguration.pulseTintColor = UIColor.red
-config.promoIndicatorConfiguration.resizeAnimationDuration = 0.1
+ResultIndicatorConfiguration.shared.contentBackgroundColor = .blue
+ResultIndicatorConfiguration.shared.selectedProductBackgroundColor = .blue
+ResultIndicatorConfiguration.shared.productIcon = UIImage(systemName: "bag.circle")
+ResultIndicatorConfiguration.shared.selectedProductIcon = UIImage(systemName: "bag.circle.fill")
+ResultIndicatorConfiguration.shared.promotionIcon = UIImage(systemName: "tag.circle")
+ResultIndicatorConfiguration.shared.selectedPromotionIcon = UIImage(systemName: "tag.circle.fill")
+ResultIndicatorConfiguration.shared.iconTintColor = .yellow
+ResultIndicatorConfiguration.shared.selectedIconTintColor = .orange
+ResultIndicatorConfiguration.shared.pulseAnimationDuration = 0.5
+ResultIndicatorConfiguration.shared.pulseTintColor = .systemPink
+ResultIndicatorConfiguration.shared.resizeAnimationDuration = 0.1
+ResultIndicatorConfiguration.shared.badgeBackgroundColor = .red
+ResultIndicatorConfiguration.shared.badgeFont = UIFont.boldSystemFont(ofSize: 12)
+ResultIndicatorConfiguration.shared.badgeTextColor = .green
+ResultIndicatorConfiguration.shared.badgeSize = CGSize(width: 30, height: 30)
+ResultIndicatorConfiguration.shared.selectedTextFont = UIFont.boldSystemFont(ofSize: 14)
+ResultIndicatorConfiguration.shared.selectedTextColor = UIColor.blue
 ```
-#### Promo Banner
-> _Displayed when a promo indicator is selected._
+#### Result Banner
+> _Displayed when a result indicator is selected._
 
 | Default | Custom |
 | --- | --- |
 | ![Banner_Default](Resources/screenshot-banner-default.png) | ![Banner_Custom](Resources/screenshot-banner-custom.png) |
 ```swift
-config.promoBannerConfiguration.contentBackgroundColor = UIColor.lightGray
-config.promoBannerConfiguration.photoContentMode = UIView.ContentMode.scaleToFill
-config.promoBannerConfiguration.detailTextColor = UIColor.yellow
-config.promoBannerConfiguration.detailFont = UIFont.monospacedSystemFont(ofSize: 11, weight: .thin)
-config.promoBannerConfiguration.titleTextColor = UIColor.green
-config.promoBannerConfiguration.titleFont = UIFont.italicSystemFont(ofSize: 18)
-config.promoBannerConfiguration.highlightedBackgroundColor = UIColor.orange
-config.promoBannerConfiguration.highlightedFont = UIFont.boldSystemFont(ofSize: 14)
-config.promoBannerConfiguration.highlightedTextColor = UIColor.blue
-config.promoBannerConfiguration.tagImage = UIImage(systemName: "tag.circle.fill")
-config.promoBannerConfiguration.tagBackgroundColor = UIColor.systemPink
-config.promoBannerConfiguration.tagTintColor = UIColor.green
+ResultBannerConfiguration.shared.contentBackgroundColor = UIColor.lightGray
+ResultBannerConfiguration.shared.highlightedBackgroundColor = UIColor.orange
+ResultBannerConfiguration.shared.highlightedFont = UIFont.boldSystemFont(ofSize: 14)
+ResultBannerConfiguration.shared.highlightedTextColor = UIColor.blue
+ResultBannerConfiguration.shared.photoContentMode = UIView.ContentMode.scaleToFill
+ResultBannerConfiguration.shared.titleTextColor = UIColor.green
+ResultBannerConfiguration.shared.titleFont = UIFont.italicSystemFont(ofSize: 18)
+ResultBannerConfiguration.shared.subtitleTextColor = UIColor.green
+ResultBannerConfiguration.shared.subtitleFont = UIFont.italicSystemFont(ofSize: 16)
+ResultBannerConfiguration.shared.tagImage = UIImage(systemName: "tag.circle.fill")
+ResultBannerConfiguration.shared.tagBackgroundColor = UIColor.systemPink
+ResultBannerConfiguration.shared.tagTintColor = UIColor.green
+ResultBannerConfiguration.shared.detailTextColor = UIColor.yellow
+ResultBannerConfiguration.shared.detailFont = UIFont.monospacedSystemFont(ofSize: 11, weight: .thin)
+ResultBannerConfiguration.shared.scrollViewHorizontalGap = 15
+ResultBannerConfiguration.shared.scrollViewHorizontalInset = 15
 ```
 #### Scan Again Button and Navigation Bar
 > _Navigation bar at the bottom that contains the Scan Again button._
@@ -232,72 +232,84 @@ config.promoBannerConfiguration.tagTintColor = UIColor.green
 | --- | --- |
 | ![Scan_Again_Default](Resources/screenshot-scan-again-default.png) | ![Scan_Again_Custom](Resources/screenshot-scan-again-custom.png) |
 ```swift
-config.scanAgainConfiguration.navigationBarColor = UIColor.gray
-config.scanAgainConfiguration.borderColor = UIColor.red
-config.scanAgainConfiguration.borderWidth = 5
-config.scanAgainConfiguration.borderGap = 2
-config.scanAgainConfiguration.contentBackgroundColor = UIColor.orange
-config.scanAgainConfiguration.hideBorder = false
-config.scanAgainConfiguration.iconImage = UIImage(systemName: "viewfinder.circle")
-config.scanAgainConfiguration.iconTintColor = UIColor.yellow
-config.scanAgainConfiguration.text = "Try Scanning Again"
-config.scanAgainConfiguration.textFont = UIFont.monospacedSystemFont(ofSize: 16, weight: .bold)
-config.scanAgainConfiguration.textColor = UIColor.green
+ScanAgainConfiguration.shared.navigationBarColor = UIColor.gray
+ScanAgainConfiguration.shared.borderColor = UIColor.red
+ScanAgainConfiguration.shared.borderWidth = 5
+ScanAgainConfiguration.shared.borderGap = 2
+ScanAgainConfiguration.shared.contentBackgroundColor = UIColor.orange
+ScanAgainConfiguration.shared.hideBorder = false
+ScanAgainConfiguration.shared.iconImage = UIImage(systemName: "viewfinder.circle")
+ScanAgainConfiguration.shared.iconTintColor = UIColor.yellow
+ScanAgainConfiguration.shared.text = "Try Scanning Again"
+ScanAgainConfiguration.shared.textFont = UIFont.monospacedSystemFont(ofSize: 16, weight: .bold)
+ScanAgainConfiguration.shared.textColor = UIColor.green
 ```
-#### Promo List / Card
-> _Displays summary of promotions when collapsed. Shows full list of promotions when expanded._
+#### Result List / Card
+> _Displays summary of results when collapsed. Shows full list of results when expanded._
 
 | Default | Custom |
 | --- | --- |
 | ![List_Default](Resources/screenshot-list-default.png) | ![List_Custom](Resources/screenshot-list-custom.png) |
 ```swift
-config.promoListConfiguration.cardBackgroundColor = UIColor.darkGray
-config.promoListConfiguration.cardHandleBarColor = UIColor.white
-config.promoListConfiguration.summaryTextColor = UIColor.green
-config.promoListConfiguration.summaryFont = UIFont.monospacedSystemFont(ofSize: 16, weight: .bold)
-config.promoListConfiguration.cellConfiguration.contentBackgroundColor = UIColor.gray
-config.promoListConfiguration.cellConfiguration.detailFont = UIFont.monospacedSystemFont(ofSize: 12, weight: .thin)
-config.promoListConfiguration.cellConfiguration.detailTextColor = UIColor.red
-config.promoListConfiguration.cellConfiguration.highlightedBackgroundColor = UIColor.orange
-config.promoListConfiguration.cellConfiguration.highlightedFont = UIFont.boldSystemFont(ofSize: 14)
-config.promoListConfiguration.cellConfiguration.highlightedTextColor = UIColor.blue
-config.promoListConfiguration.cellConfiguration.photoContentMode = UIView.ContentMode.scaleAspectFill
-config.promoListConfiguration.cellConfiguration.tagImage = UIImage(systemName: "tag.circle.fill")
-config.promoListConfiguration.cellConfiguration.tagBackgroundColor = UIColor.systemPink
-config.promoListConfiguration.cellConfiguration.tagTintColor = UIColor.green
-config.promoListConfiguration.cellConfiguration.titleTextColor = UIColor.green
-config.promoListConfiguration.cellConfiguration.titleFont = UIFont.italicSystemFont(ofSize: 18)
+ResultListConfiguration.shared.cardBackgroundColor = UIColor.darkGray
+ResultListConfiguration.shared.cardHandleBarColor = UIColor.white
+ResultListConfiguration.shared.summaryTextColor = UIColor.green
+ResultListConfiguration.shared.summaryFont = UIFont.monospacedSystemFont(ofSize: 16, weight: .bold)
+ResultListConfiguration.shared.headerHeight = 15
+ResultListConfiguration.shared.headerFont = UIFont.boldSystemFont(ofSize: 16)
+ResultListConfiguration.shared.headerTextColor = UIColor.brown
+ResultListConfiguration.shared.headerPromotionsText = "Promotions"
+ResultListConfiguration.shared.headerProductsText = "Products Only"
+        
+ResultListCellConfiguration.shared.contentBackgroundColor = UIColor.gray
+ResultListCellConfiguration.shared.borderCornerRadius = 10
+ResultListCellConfiguration.shared.borderColor = UIColor.blue
+ResultListCellConfiguration.shared.borderWidth = 5
+ResultListCellConfiguration.shared.promotionBorderColor = UIColor.red
+ResultListCellConfiguration.shared.highlightedBackgroundColor = UIColor.orange
+ResultListCellConfiguration.shared.highlightedFont = UIFont.boldSystemFont(ofSize: 14)
+ResultListCellConfiguration.shared.highlightedTextColor = UIColor.blue
+ResultListCellConfiguration.shared.photoContentMode = UIView.ContentMode.scaleAspectFill
+ResultListCellConfiguration.shared.tagImage = UIImage(systemName: "tag.circle.fill")
+ResultListCellConfiguration.shared.tagBackgroundColor = UIColor.systemPink
+ResultListCellConfiguration.shared.tagTintColor = UIColor.green
+ResultListCellConfiguration.shared.titleTextColor = UIColor.green
+ResultListCellConfiguration.shared.titleFont = UIFont.italicSystemFont(ofSize: 18)
+ResultListCellConfiguration.shared.subtitleFont = UIFont.boldSystemFont(ofSize: 16)
+ResultListCellConfiguration.shared.subtitleTextColor = UIColor.green
+ResultListCellConfiguration.shared.detailFont = UIFont.monospacedSystemFont(ofSize: 12, weight: .thin)
+ResultListCellConfiguration.shared.detailTextColor = UIColor.red
 ```
-#### Promo Details
-> _Displayed when a promo banner is tapped or a row is selected from the promo list._
+#### Result Details
+> _Displayed when a result banner is tapped or a row is selected from the result list._
 
 | Default | Custom |
 | --- | --- |
 | ![Details_Default](Resources/screenshot-details-default.png) | ![Details_Custom](Resources/screenshot-details-custom.png) |
 ```swift
-config.promoDetailsConfiguration.cardBackgroundColor = UIColor.black
-config.promoDetailsConfiguration.detailBorderColor = UIColor.red
-config.promoDetailsConfiguration.detailHeaderIcon = UIImage(systemName: "tag.circle")
-config.promoDetailsConfiguration.detailHeaderIconTintColor = UIColor.green
-config.promoDetailsConfiguration.detailHeaderFont = UIFont.monospacedSystemFont(ofSize: 14, weight: .bold)
-config.promoDetailsConfiguration.detailHeaderText = "More Details..."
-config.promoDetailsConfiguration.detailHeaderTextColor = UIColor.blue
-config.promoDetailsConfiguration.mainDetailFont = UIFont.monospacedSystemFont(ofSize: 18, weight: .thin)
-config.promoDetailsConfiguration.mainDetailTextColor = UIColor.orange
-config.promoDetailsConfiguration.limitationDetailFont = UIFont.monospacedSystemFont(ofSize: 12, weight: .medium)
-config.promoDetailsConfiguration.limitationDetailTextColor = UIColor.yellow
-config.promoDetailsConfiguration.dismissButtonImage = UIImage(systemName: "xmark.circle")
-config.promoDetailsConfiguration.dismissButtonSize = CGSize(width: 40, height: 40)
-config.promoDetailsConfiguration.dismissButtonTintColor = UIColor.purple
-config.promoDetailsConfiguration.highlightedBackgroundColor = UIColor.orange
-config.promoDetailsConfiguration.highlightedFont = UIFont.boldSystemFont(ofSize: 14)
-config.promoDetailsConfiguration.highlightedTextColor = UIColor.blue
-config.promoDetailsConfiguration.photoContentMode = UIView.ContentMode.scaleAspectFill
-config.promoDetailsConfiguration.tagImage = UIImage(systemName: "tag.circle.fill")
-config.promoDetailsConfiguration.tagBackgroundColor = UIColor.systemPink
-config.promoDetailsConfiguration.tagTintColor = UIColor.green
-config.promoDetailsConfiguration.titleTextColor = UIColor.green
-config.promoDetailsConfiguration.titleFont = UIFont.italicSystemFont(ofSize: 18)
+ResultDetailsConfiguration.shared.cardBackgroundColor = UIColor.black
+ResultDetailsConfiguration.shared.detailBorderColor = UIColor.red
+ResultDetailsConfiguration.shared.detailHeaderIcon = UIImage(systemName: "tag.circle")
+ResultDetailsConfiguration.shared.detailHeaderIconTintColor = UIColor.green
+ResultDetailsConfiguration.shared.detailHeaderFont = UIFont.monospacedSystemFont(ofSize: 14, weight: .bold)
+ResultDetailsConfiguration.shared.detailHeaderText = "More Details..."
+ResultDetailsConfiguration.shared.detailHeaderTextColor = UIColor.blue
+ResultDetailsConfiguration.shared.mainDetailFont = UIFont.monospacedSystemFont(ofSize: 18, weight: .thin)
+ResultDetailsConfiguration.shared.mainDetailTextColor = UIColor.orange
+ResultDetailsConfiguration.shared.limitationDetailFont = UIFont.monospacedSystemFont(ofSize: 12, weight: .medium)
+ResultDetailsConfiguration.shared.limitationDetailTextColor = UIColor.yellow
+ResultDetailsConfiguration.shared.dismissButtonImage = UIImage(systemName: "xmark.circle")
+ResultDetailsConfiguration.shared.dismissButtonSize = CGSize(width: 40, height: 40)
+ResultDetailsConfiguration.shared.dismissButtonTintColor = UIColor.purple
+ResultDetailsConfiguration.shared.highlightedBackgroundColor = UIColor.orange
+ResultDetailsConfiguration.shared.highlightedFont = UIFont.boldSystemFont(ofSize: 14)
+ResultDetailsConfiguration.shared.highlightedTextColor = UIColor.blue
+ResultDetailsConfiguration.shared.photoContentMode = UIView.ContentMode.scaleAspectFill
+ResultDetailsConfiguration.shared.tagImage = UIImage(systemName: "tag.circle.fill")
+ResultDetailsConfiguration.shared.tagBackgroundColor = UIColor.systemPink
+ResultDetailsConfiguration.shared.tagTintColor = UIColor.green
+ResultDetailsConfiguration.shared.titleTextColor = UIColor.green
+ResultDetailsConfiguration.shared.titleFont = UIFont.italicSystemFont(ofSize: 18)
 ```
 
 ### Subclassing
