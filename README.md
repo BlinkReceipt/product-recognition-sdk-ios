@@ -101,13 +101,30 @@ let singlePhotoVC = SinglePhotoVC()
 singlePhotoVC.modalPresentationStyle = .fullScreen
 self.present(singlePhotoVC, animated: true)
 ```
-> _Callback that returns the URL of the captured image saved locally._
+> _A Boolean value that determines whether to scan the image for products after capturing.
+Setting this to `true` will also display the scanning animation.
+The default value is `true`._
 ```swift
-singlePhotoVC.didCaptureImage = { url in
+singlePhotoVC.shouldScanCapturedImage = true
+```
+> _A Boolean value that determines whether the view will always present the results. The default value is `true`._
+```swift
+singlePhotoVC.shouldPresentResults = true
+```
+> _A Boolean value that determines whether to show results with promotions or products only. The default value is `true`._
+```swift
+singlePhotoVC.shouldShowPromotions = true
+```
+> _The block to execute after capturing an image. This block has no return value and takes two arguments.
+The first is a UIImage of the captured image.
+The second is a URL that indicates the location of the captured image saved in the local directory.
+This parameter may be NULL._
+```swift
+singlePhotoVC.didCaptureImage = { (image, url) in
   // ...
 }
 ```
-> _Callback that returns detected products with promo details and the URL of the captured image._
+> _The block to execute after the result view controller processed the captured image and received the results. This block has no return value and takes two arguments. The first is an array of products received as a result of processing the captured image. The second is a URL of the processed captured image. This parameter may be NULL._
 ```swift
 singlePhotoVC.didReceiveResults = { (products, imageURL) in
   // ...
@@ -122,7 +139,14 @@ let url = singlePhotoVC.capturedImageURL
 singlePhotoVC.clearAllCapturedImagesFromDisk(okTitle: nil, okMesssage: nil,
                                              failedTitle: nil, failedMessage: nil)
 ```
-
+> _Manually starts the camera session._
+```swift
+singlePhotoVC.startCaptureSession()
+```
+> _Manually stops the camera session._
+```swift
+singlePhotoVC.stopCaptureSession()
+```
 ## Customizable UI
 ### Capture View
 | Default | Custom |
