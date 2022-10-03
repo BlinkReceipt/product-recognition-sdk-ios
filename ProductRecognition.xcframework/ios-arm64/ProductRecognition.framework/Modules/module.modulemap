@@ -6,6 +6,6 @@ framework module ProductRecognition {
 }
 
 module ProductRecognition.Swift {
-    header "ProductRecognition-Swift.h"
-    requires objc
+  header "ProductRecognition-Swift.h"
+  requires objc
 }

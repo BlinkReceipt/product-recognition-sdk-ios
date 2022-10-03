@@ -10,9 +10,12 @@
 #import <Foundation/Foundation.h>
 #import "FeaturesExtractorObjC.h"
 #import "ImageProcessor.h"
-#import "RGBImageCropper.h"
+#import "BGRImageCropper.h"
 #import "AddProductsViewController.h"
 #import "TrackedDataObjC.h"
+
+// TODO remove this once it is no longer used in the demo app directly
+#import "ImageUtilsObjCpp.h"
 
 //! Project version number for ProductRecognition.
 FOUNDATION_EXPORT double ProductRecognitionVersionNumber;

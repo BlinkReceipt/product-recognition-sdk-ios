@@ -10,12 +10,15 @@
 #pragma once
 
 #import <Foundation/Foundation.h>
+#import <CoreVideo/CoreVideo.h>
 #import <UIKit/UIKit.h>
 
-@interface RGBImageCropper : NSObject
+@interface ImageUtilsObjCpp : NSObject
 
-- (void)setImage:(CVPixelBufferRef)cvPixelBuffer;
++ (UIImage* _Nonnull) createUIImageFromCVPixelBuffer: (CVPixelBufferRef _Nonnull) cvPixelBufferRef;
 
-- (CVPixelBufferRef) getCrop:(uint16_t)x y:(uint16_t)y width:(uint16_t)width height:(uint16_t)height;
++ (CVPixelBufferRef _Nonnull) createCVPixelBufferFromData: (NSData* _Nonnull) imageData width: (int) imgWidth height :(int) imgHeight;
+
++ (NSData* _Nonnull) createDataFromBGRBytes: (uint8_t* _Nonnull) srcBgrBytes count:(int)count;
 
 @end

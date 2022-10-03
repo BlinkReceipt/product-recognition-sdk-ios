@@ -28,20 +28,15 @@ typedef NS_ENUM(NSInteger, EmbedderVersionObjC) {
 
 - (instancetype _Nonnull)init NS_UNAVAILABLE;
 
-- (instancetype _Nonnull) init:(DetectorVersionObjC)detectorVersionObjC embedderVersion:(EmbedderVersionObjC)embedderVersionObjC;
-
 - (instancetype _Nonnull) init:(DetectorVersionObjC)detectorVersionObjC
                embedderVersion:(EmbedderVersionObjC)embedderVersionObjC
-                    licenseKey:(NSString *_Nonnull)licenseKeyObjC
-                      bundleId:(NSString *_Nonnull)bundleIdObjC;
+                    licenseKey:(NSString *_Nonnull)licenseKeyObjC;
 
 - (void) feedBuffer: (double) imageUid buffer: (CVPixelBufferRef _Nonnull) buffer withRotation: (CVPixelBufferOrientation) rotation withScoreThreshold: (float) scoreThreshold;
 
 - (ProcessingData* _Nonnull) getProcessingDataForImageUid: (double) imageUid;
 
-- (NSData* _Nonnull) getImageDataForImageUid: (double) imageUid;
-
-- (UIImage* _Nonnull) getUIImageForImageUid: (double) imageUid;
+- (NSData* _Nonnull) getBgrImageDataForImageUid: (double) imageUid;
 
 - (CVPixelBufferRef _Nonnull) getCVPixelBufferForDetectionWithId: (unsigned long) detectionId forImageUid:(double)imageUid;
 
@@ -54,4 +49,7 @@ typedef NS_ENUM(NSInteger, EmbedderVersionObjC) {
 - (void) removeDataForImageUid: (double) imageUid;
 
 - (TrackedDataObjC* _Nonnull) getLatestItemsTrackingData;
+
+- (void) resetTrackingState;
+
 @end

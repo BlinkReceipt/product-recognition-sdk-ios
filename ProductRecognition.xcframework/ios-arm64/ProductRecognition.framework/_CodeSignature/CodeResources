@@ -6,11 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		CLshyKdUYnHQkdl8xDADjtnBLIE=
+		GWClj+gAo2ouOLA7Ta9Im2fCS2w=
 		</data>
 		<key>Headers/AddProductsViewController.h</key>
 		<data>
 		ZLv6CvYc2C4UOrwa/V4h8CFmRII=
+		</data>
+		<key>Headers/BGRImageCropper.h</key>
+		<data>
+		EodOzvkYhuLnHzny5f3HJMaGhuo=
 		</data>
 		<key>Headers/CVPixelBufferOrientation.h</key>
 		<data>
@@ -34,7 +38,11 @@
 		</data>
 		<key>Headers/ImageProcessor.h</key>
 		<data>
-		eu80XP7lGKMODET1eTmEpDyE45k=
+		2tcIzyCzD1S9GnWG1RktU0Mdei8=
+		</data>
+		<key>Headers/ImageUtilsObjCpp.h</key>
+		<data>
+		0XwdeOxOdfzxWEKh/ELOgMM5faI=
 		</data>
 		<key>Headers/Item2dTrackingDataObjC.h</key>
 		<data>
@@ -46,15 +54,11 @@
 		</data>
 		<key>Headers/ProductRecognition-Swift.h</key>
 		<data>
-		CKlPE0i9ZzJsPZifM4QDmWQBIro=
+		knP6xP1RSh+L0ECOcy/XgCdbnkc=
 		</data>
 		<key>Headers/ProductRecognition.h</key>
 		<data>
-		XUBAEDEXSvDxk0o6ZjjBRVrLpCc=
-		</data>
-		<key>Headers/RGBImageCropper.h</key>
-		<data>
-		PqHsa4z5nU6gTzvPsXmNPC5YTX4=
+		9ON/rema111t47UfgYxEExhUibQ=
 		</data>
 		<key>Headers/TrackedDataObjC.h</key>
 		<data>
@@ -62,59 +66,59 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		i7/Pya0Kn4/uHV0enj/Ega3X1RI=
+		o9K+VlBhIAisDYsvg7PXF92tLFI=
 		</data>
 		<key>Model_27d60bf83843c524973438b0cdede7299381fae91b209862c5e0bf89b02039ac.strop</key>
 		<data>
-		z5xAngW0QgPljNSNLHXcE0JzpBA=
+		oKBk4+2oQ9uNnSEQVnsO5MlHag8=
 		</data>
-		<key>Model_2efe0be0a549cbb5d3810ef020ffa3e07c27670afc1f9830bca07c8657d5a904.strop</key>
+		<key>Model_577d7425a8003ca8f2f9575d469676383c07ce6a73d567a461b8c0502560aaea.strop</key>
 		<data>
-		H6UpDTLkmu+0uXmpBBAzTsDWIvY=
-		</data>
-		<key>Model_6c7e28658dfbcdd2177b4a1b986bb93066e80ef6f47e99256adb9d5a46bac56c.strop</key>
-		<data>
-		8tt73CsKyYPPp4BDDDESeqrWglc=
-		</data>
-		<key>Model_6f25e3d01cc9c2e0a3706e84858700ba7eff7b411c76520082740fc60079eb8e.strop</key>
-		<data>
-		rPWVZEs58PxG/YBX88HVyI3tm2s=
+		Od+NS1hMgqsukab1KCw9uPhcRok=
 		</data>
 		<key>Model_769fec4c73f87ab4a966a97cacac4baf70cc19a59db0bf294bcb19173fa6bc98.strop</key>
 		<data>
-		b55GVBaHcAoCNoOY5Og7+sOUOFM=
+		a9HtV/Pzpmwv+Cmzr9N0QCnLr3o=
 		</data>
 		<key>Model_83d8b6bdd492003937e29dbba3547058edf787412c9551cd865f36f360f7ef65.strop</key>
 		<data>
-		YjvlSFFk7f2C2BsJ/H0TRbytMpE=
+		G+VMT+eicPN1KJHfiDYfQucm578=
 		</data>
 		<key>Model_d163c4c93d43942c1479f87db1e0f01d54447873cef62d50437b025689701fd0.strop</key>
 		<data>
-		WJFGuNKh5aISviZQF4RkGzB2I60=
+		w6UUoPaNRRvcBR01iln2dZiZrrw=
 		</data>
 		<key>Model_d1a8cfb3e3b0a37b777156d74c8eb41101ce606e5565ad9ef1d522119c90bd3b.strop</key>
 		<data>
-		mU2pmXy+jrjDMm4JXK9hb+oDbdc=
+		CuoxTQ2zTvVHdEyEiIzPRat3RKQ=
 		</data>
 		<key>Model_f68f93e4c48514cf9fd6726f46aaab7a99ba6115eb9ca31f68c5c9a7c54d8629.strop</key>
 		<data>
-		77iv1lBTT2MAJHPyuL+fLAcXbtE=
+		uUzrrKSh2JJe7g3HL1I23SdC7hw=
+		</data>
+		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		dvX2UTGqHxUUEnC75radAwcYAvg=
+		</data>
+		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		0HQa7I19BPDzWnF8IlR9hP6hTAA=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		p86Y9+1MenlINRSDY0hn6T6FHKA=
+		JXzHyGvkYqY0lYCk+8CVp4n9pgY=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Vau3a5r3Zpv9EvhOVyALKH58zSQ=
+		0HQa7I19BPDzWnF8IlR9hP6hTAA=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tnwW1YrRkRpPHKC1QKGjbsprKxQ=
+		da5ZFye2uXHmvceVRcBJM56WV1c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		L6IQxs2yLJAG5l/0VPvD0DlFozw=
+		nn1J//YtkG2yydHGkzyEO0boIGI=
 		</data>
 		<key>Satoshi-Black.otf</key>
 		<data>
@@ -163,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8cIVqpiDk7mpIwbgyqSxhqR0v3UA6puNgcGeSLQ9i9Q=
+			tUP+4iFjysRJB6RIIp0cIquAqGFI8nFEzScSCpQlRcc=
 			</data>
 		</dict>
 		<key>Headers/AddProductsViewController.h</key>
@@ -171,6 +175,13 @@
 			<key>hash2</key>
 			<data>
 			ND8QeRx11TkT26cIIMwWsj6lRfomZemM/iRUgSRAx/c=
+			</data>
+		</dict>
+		<key>Headers/BGRImageCropper.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RPklnuamkQRxDsQENn3I2SfCzT9c2XJBq2oklFFM5q4=
 			</data>
 		</dict>
 		<key>Headers/CVPixelBufferOrientation.h</key>
@@ -212,7 +223,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zBYV4CzCw1nH9x73tHe8EBB+T8lhX0EFSNEgjH7b8z4=
+			XVwAE1Shqn5nqJPC4FjUEzj6RVluhjgvWbZQLZLBKkQ=
+			</data>
+		</dict>
+		<key>Headers/ImageUtilsObjCpp.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tQg2EBsQ1NiFqDuVpOKCO/uSKZsmTf97WW86+S+HV/I=
 			</data>
 		</dict>
 		<key>Headers/Item2dTrackingDataObjC.h</key>
@@ -233,21 +251,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uzxmV2MaycINMmQHnK8/802wk0m37mTbvWYFctQBKbs=
+			tPpF4COgEZnSmTl2FbAkimhL+1w8AHIRoKwvJKp1Vhc=
 			</data>
 		</dict>
 		<key>Headers/ProductRecognition.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lwO1em8l4mj2+d4ZmpAlv1FKxkwKQHnL/R5P2quMvI4=
-			</data>
-		</dict>
-		<key>Headers/RGBImageCropper.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bRzJ0EjtnuLH+B0AlyM/hyH5du2QFVTHvCeVnT9y7C4=
+			PC8Q2GZqp5kXkOKwp5WEzcuTGUGLmo+oi/cnizFrOrg=
 			</data>
 		</dict>
 		<key>Headers/TrackedDataObjC.h</key>
@@ -261,91 +272,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zHWfWVFeUANo35uDKPUPTaHqCiZjKTYksfgPV6hH1D4=
+			gaIqp12zjbFFQAANSj2ymd/7IYNHPesniZD8oplDVtw=
 			</data>
 		</dict>
-		<key>Model_2efe0be0a549cbb5d3810ef020ffa3e07c27670afc1f9830bca07c8657d5a904.strop</key>
+		<key>Model_577d7425a8003ca8f2f9575d469676383c07ce6a73d567a461b8c0502560aaea.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G20fu+mTQsD3tGwBqrEAqzwKzKYBbF+OJSJjchrO5Fg=
-			</data>
-		</dict>
-		<key>Model_6c7e28658dfbcdd2177b4a1b986bb93066e80ef6f47e99256adb9d5a46bac56c.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			m5bpcQln4m1ttgphSexClOVDaGI3ohLM3fBVDH2f90I=
-			</data>
-		</dict>
-		<key>Model_6f25e3d01cc9c2e0a3706e84858700ba7eff7b411c76520082740fc60079eb8e.strop</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iRG781HUGXD91bCk+jAKfBxSoPSJVpF1MOQEstg7SVg=
+			8Q9GH4yp1ZopVHCzisC+Qzyr34gElUXu0UIvSUS5bV4=
 			</data>
 		</dict>
 		<key>Model_769fec4c73f87ab4a966a97cacac4baf70cc19a59db0bf294bcb19173fa6bc98.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mcVMfv/uDHcHc0o3vHHjpwhMxN2jPVAn97BgLERJpE8=
+			FNfEGvHqSOIfTmvCQznA2habe4GiVNLZYWvFY2RgsWQ=
 			</data>
 		</dict>
 		<key>Model_83d8b6bdd492003937e29dbba3547058edf787412c9551cd865f36f360f7ef65.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RDUPaQcpzLw7PM8ifvKBII+NTk6m9GNIbJWiJt6tBM0=
+			a+bp+JKRuq5xDJ/VxLYvqVNDROSos+wVLz7NmQFXr6M=
 			</data>
 		</dict>
 		<key>Model_d163c4c93d43942c1479f87db1e0f01d54447873cef62d50437b025689701fd0.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Je/9cNl+SdeCPIOoPbUz11D6YpcdwiN019bMQY/EFU=
+			L6MtXkitKSrnqhSCTGzKekWV35qCxkAhScEiNTL1VKo=
 			</data>
 		</dict>
 		<key>Model_d1a8cfb3e3b0a37b777156d74c8eb41101ce606e5565ad9ef1d522119c90bd3b.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			srozHcf3vYQALnDlHhtsyOKEMGlYI3TrgOpxAeTFJtY=
+			iiJmlS4yAXliIc3wdc4myLXROzXjHvYxyhbN+8k7ZCo=
 			</data>
 		</dict>
 		<key>Model_f68f93e4c48514cf9fd6726f46aaab7a99ba6115eb9ca31f68c5c9a7c54d8629.strop</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n3ODptKq+PRxWIvjO4CHY4VeYUv0Fz1VB/vjjAK8/HU=
+			A8GDpSfkuI7EuG5wMB4sSr3yfpPUGe9P04hxN/N9o+s=
+			</data>
+		</dict>
+		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yw95wN5UjUXD+BaRE7/lTHvnt2zUjiQBQenTaaMIVng=
+			</data>
+		</dict>
+		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			weh+2TcH310UW13FgMAiB0byUbEccRTwBWU9IKeOClc=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qw9muZVyfYZO9gkqe5lvP1hMgVV2oggWUq2Yuo+lbCQ=
+			2HImNTxo411TDDWDlLP630f5mobFA9nCgeh4xqKBFlM=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KxNR0pXF7/umdqYjrn2zgdv+k4V7XPY9MwIvq+f3/wE=
+			weh+2TcH310UW13FgMAiB0byUbEccRTwBWU9IKeOClc=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GynMSAieFng9SqozTyvAYIoyzzAgzr33+Bo6nhCn9KU=
+			f/WPyiGbPaZmQjWD8qVJ+jKeP5tFFZv0OP0OuSHoj90=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1gT6J5o1oSP+jXiIN0FTOwdxprHEAwRKqf/MX00FgYg=
+			+89k3Rl8SI9gIeq8BBVRwL4pDAMcBoUic9T1mmwwo0g=
 			</data>
 		</dict>
 		<key>Satoshi-Black.otf</key>
