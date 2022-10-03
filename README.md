@@ -199,7 +199,7 @@ ResultIndicatorConfiguration.shared.badgeFont = UIFont.boldSystemFont(ofSize: 12
 ResultIndicatorConfiguration.shared.badgeTextColor = .green
 ResultIndicatorConfiguration.shared.badgeSize = CGSize(width: 30, height: 30)
 ResultIndicatorConfiguration.shared.selectedTextFont = UIFont.boldSystemFont(ofSize: 14)
-ResultIndicatorConfiguration.shared.selectedTextColor = UIColor.blue
+ResultIndicatorConfiguration.shared.selectedTextColor = UIColor.white
 ```
 #### Result Banner
 > _Displayed when a result indicator is selected._
