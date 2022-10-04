@@ -147,6 +147,19 @@ singlePhotoVC.startCaptureSession()
 ```swift
 singlePhotoVC.stopCaptureSession()
 ```
+## Static Discovery Manager
+If you have custom views, you can use the `StaticDiscoveryManager` to manually scan images and get back the results.
+```swift
+var image = UIImage()
+var withPromotions = true
+StaticDiscoveryManager.shared.scanImageForProducts(image, withPromotions: withPromotions)
+
+// The block to be executed after scanning the captured image and have received the results.
+StaticDiscoveryManager.shared.didReceiveIndexedProducts = { (indexedProducts: [(Int64, ProductInfo)]) in
+    // Process results data
+}
+```
+
 ## Customizable UI
 ### Capture View
 | Default | Custom |
