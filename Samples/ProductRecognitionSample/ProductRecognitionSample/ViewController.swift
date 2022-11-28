@@ -9,6 +9,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openSinglePhoto(_ sender: Any) {
+        SDKConfiguration.shared.singlePhotoBoundingBoxesToShow = .trackingBoxes
+        
         let singlePhotoVC = SinglePhotoVC()
         singlePhotoVC.modalPresentationStyle = .fullScreen
         self.present(singlePhotoVC, animated: true)

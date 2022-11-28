@@ -1,11 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ProductRecognition
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
 import AVFoundation
+import CoreLocation
 import CoreMotion
 import Foundation
+import Network
 @_exported import ProductRecognition
 import Security
 import Swift
@@ -31,6 +33,9 @@ import simd
   @_Concurrency.MainActor(unsafe) public var products: [ProductRecognition.ProductInfo] {
     get
   }
+  @_Concurrency.MainActor(unsafe) public var store: ProductRecognition.Store? {
+    get
+  }
   @_Concurrency.MainActor(unsafe) public var summaryText: Swift.String? {
     get
     set
@@ -50,7 +55,7 @@ import simd
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) public func loadList(of products: [ProductRecognition.ProductInfo])
+  @_Concurrency.MainActor(unsafe) public func loadList(of products: [ProductRecognition.ProductInfo], store: ProductRecognition.Store?)
   @objc deinit
 }
 extension ProductRecognition.ResultListView : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
@@ -132,7 +137,7 @@ public struct ResultIndicatorConfiguration {
   }
   @_Concurrency.MainActor(unsafe) open var captureRegion: CoreFoundation.CGRect
   @_Concurrency.MainActor(unsafe) open var didCaptureImage: ((UIKit.UIImage, Foundation.URL?) -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) open var didReceiveResults: (([ProductRecognition.ProductInfo], Foundation.URL?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var didReceiveResults: (([ProductRecognition.ProductInfo], Foundation.URL?, ProductRecognition.Products.StaticDiscovery.Response.Session?, ProductRecognition.Products.StaticDiscovery.Response.StoreDetection?) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) open var shouldPresentResults: Swift.Bool
   @_Concurrency.MainActor(unsafe) open var shouldScanCapturedImage: Swift.Bool
   @_Concurrency.MainActor(unsafe) open var shouldShowPromotions: Swift.Bool
@@ -145,7 +150,6 @@ public struct ResultIndicatorConfiguration {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc open func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
-  @_Concurrency.MainActor(unsafe) @objc open func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, willBeginCaptureFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
   @_Concurrency.MainActor(unsafe) @objc open func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVFoundation.AVCapturePhoto, error: Swift.Error?)
   @_Concurrency.MainActor(unsafe) @objc open func photoOutput(_ output: AVFoundation.AVCapturePhotoOutput, willCapturePhotoFor resolvedSettings: AVFoundation.AVCaptureResolvedPhotoSettings)
   @_Concurrency.MainActor(unsafe) open func clearAllCapturedImagesFromDisk(okTitle: Swift.String?, okMesssage: Swift.String?, failedTitle: Swift.String?, failedMessage: Swift.String?)
@@ -154,9 +158,6 @@ public struct ResultIndicatorConfiguration {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
-}
-extension ProductRecognition.SinglePhotoVC : ProductRecognition.StabilityDelegate {
-  @_Concurrency.MainActor(unsafe) public func stabilityDelegate(isMoving: Swift.Bool)
 }
 public struct ResultBannerConfiguration {
   public static var shared: ProductRecognition.ResultBannerConfiguration
@@ -177,11 +178,6 @@ public struct ResultBannerConfiguration {
   public var scrollViewHorizontalGap: CoreFoundation.CGFloat
   public var scrollViewHorizontalInset: CoreFoundation.CGFloat
   public init()
-}
-@_hasMissingDesignatedInitializers final public class AuthManager {
-  public static let shared: ProductRecognition.AuthManager
-  final public func loadAuthTokenForCurrentDevice(licenseKey: Swift.String, completion: ((_ success: Swift.Bool) -> Swift.Void)? = nil)
-  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ResultBanner : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public static let bannerHeight: CoreFoundation.CGFloat
@@ -297,6 +293,29 @@ public struct ResultListConfiguration {
   public var headerProductsText: Swift.String
   public init()
 }
+public struct Store : Swift.Decodable {
+  public var id: Swift.Int
+  public var bannerId: Swift.Int?
+  public var name: Swift.String?
+  public var merchantName: Swift.String?
+  public var locationNumber: Swift.Int?
+  public var phoneNumber: Swift.String?
+  public var fullAddress: Swift.String
+  public var address: Swift.String
+  public var city: Swift.String
+  public var state: Swift.String?
+  public var zipCode: Swift.String?
+  public var managerName: Swift.String?
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public var country: Swift.String?
+  public var googlePlaceId: Swift.String?
+  public var yelpPlaceId: Swift.String?
+  public var storeTypes: Swift.String?
+  public var distance: Swift.Double
+  public var units: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
 public class FeaturesExtractor {
   weak public var delegate: ProductRecognition.FeaturesExtractorDelegate?
   public init(arSession: ARKit.ARSession, timeInterval: Foundation.TimeInterval)
@@ -315,9 +334,26 @@ extension ProductRecognition.Products {
       public struct PromotionDisplay : Swift.Decodable {
         public init(from decoder: Swift.Decoder) throws
       }
+      public struct Session : Swift.Decodable {
+        public var sessionId: Swift.String?
+        public var frameId: Swift.String?
+        public init(from decoder: Swift.Decoder) throws
+      }
+      public struct StoreDetection : Swift.Decodable {
+        public var store: ProductRecognition.Store?
+        public var suggestions: [ProductRecognition.Store]
+        public init(from decoder: Swift.Decoder) throws
+      }
       public init(from decoder: Swift.Decoder) throws
     }
   }
+}
+public struct ResultStoreCellConfiguration {
+  public static var shared: ProductRecognition.ResultStoreCellConfiguration
+  public var nameFont: UIKit.UIFont
+  public var nameTextColor: UIKit.UIColor
+  public var detailFont: UIKit.UIFont
+  public var detailTextColor: UIKit.UIColor
 }
 public struct ResultListCellConfiguration {
   public static var shared: ProductRecognition.ResultListCellConfiguration
@@ -343,12 +379,26 @@ public struct ResultListCellConfiguration {
 }
 @_hasMissingDesignatedInitializers public class StaticDiscoveryManager {
   public static let shared: ProductRecognition.StaticDiscoveryManager
-  public var didReceiveIndexedProducts: (([(Swift.Int64, ProductRecognition.ProductInfo)]) -> Swift.Void)?
-  public func scanImageForProducts(_ image: UIKit.UIImage, withPromotions: Swift.Bool = true)
+  public var didReceiveIndexedProducts: (([(Swift.Int64, ProductRecognition.ProductInfo)], ProductRecognition.Products.StaticDiscovery.Response.Session?, ProductRecognition.Products.StaticDiscovery.Response.StoreDetection?) -> Swift.Void)?
+  public var maxRetryCount: Swift.Int
+  public var timeoutLimit: Swift.Double
+  public func scanImageForProducts(_ image: UIKit.UIImage, withPromotions: Swift.Bool = true, sessionId: Swift.String? = nil, userLocation: ProductRecognition.UserLocation? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class NetworkBannerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var connectedIcon: UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) public var connectedText: Swift.String
+  @_Concurrency.MainActor(unsafe) public var noConnectionIcon: UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) public var noConnectionText: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ResultVC : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public var detectedProducts: [ProductRecognition.ProductInfo] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var currentStore: ProductRecognition.Store? {
     get
   }
   @_Concurrency.MainActor(unsafe) public var willDismiss: (() -> Swift.Void)?
@@ -365,10 +415,14 @@ public struct ResultListCellConfiguration {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) public var currentStoreLabel: ProductRecognition.ScanAgainStoreView {
+    get
+    set
+  }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
-  @_Concurrency.MainActor(unsafe) public func loadReceivedIndexedProducts(_ indexToProductInfo: [(Swift.Int64, ProductRecognition.ProductInfo)], withPromotions: Swift.Bool = true, shouldPresent: @escaping (_ shouldPresent: Swift.Bool, _ viewController: ProductRecognition.ResultVC) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public func loadReceivedIndexedProducts(_ indexToProductInfo: [(Swift.Int64, ProductRecognition.ProductInfo)], withPromotions: Swift.Bool = true, currentStore: ProductRecognition.Store? = nil, shouldPresent: @escaping (_ shouldPresent: Swift.Bool, _ viewController: ProductRecognition.ResultVC) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -458,22 +512,32 @@ public struct ResultListCellConfiguration {
   @_Concurrency.MainActor(unsafe) @objc public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
   @objc deinit
 }
+public struct StoreDetectionConfiguration {
+  public static var shared: ProductRecognition.StoreDetectionConfiguration
+  public static let minimumRadius: Swift.Float
+  public static let maximumRadius: Swift.Float
+  public var isEnabled: Swift.Bool
+  public var unitOfDistance: ProductRecognition.StoreDetectionConfiguration.UnitOfDistance
+  public var radius: Swift.Float
+  public enum UnitOfDistance : Swift.String, Swift.CaseIterable {
+    case mi, km
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [ProductRecognition.StoreDetectionConfiguration.UnitOfDistance]
+    public typealias RawValue = Swift.String
+    public static var allCases: [ProductRecognition.StoreDetectionConfiguration.UnitOfDistance] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
 public struct Products {
   public struct Request : Swift.Encodable {
-    public var uid: Swift.String
-    public var apiToken: Swift.String
     public var countryIsoAlpha2Code: Swift.String
-    public var store: ProductRecognition.Products.Request.Store
     public var products: [ProductRecognition.Products.Request.Product]
     public var features: ProductRecognition.Products.Request.Features
-    public struct Store : Swift.Encodable {
-      public var bannerId: Swift.Int
-      public var merchantName: Swift.String
-      public var storeLocationId: Swift.Int
-      public var state: Swift.String
-      public var zipCode: Swift.String
-      public func encode(to encoder: Swift.Encoder) throws
-    }
+    public var storeDetection: ProductRecognition.Products.Request.StoreDetection?
     public struct Product : Swift.Encodable {
       public var order: Swift.Int
       public var productIntelData: ProductRecognition.Products.Request.Product.ProductIntelData?
@@ -494,13 +558,21 @@ public struct Products {
       public var reviews: Swift.Bool
       public func encode(to encoder: Swift.Encoder) throws
     }
+    public struct StoreDetection : Swift.Encodable {
+      public var latitude: Swift.Double
+      public var longitude: Swift.Double
+      public var radius: Swift.Float
+      public var units: Swift.String
+      public func encode(to encoder: Swift.Encoder) throws
+    }
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct Response : Swift.Decodable {
     public var success: Swift.Bool?
     public var products: [ProductRecognition.Products.Response.Product]?
     public var promotions: ProductRecognition.Products.Response.Promotions?
-    public init(success: Swift.Bool? = nil, products: [ProductRecognition.Products.Response.Product]? = nil, promotions: ProductRecognition.Products.Response.Promotions? = nil)
+    public var storeDetection: ProductRecognition.Products.Response.StoreDetection?
+    public init(success: Swift.Bool? = nil, products: [ProductRecognition.Products.Response.Product]? = nil, promotions: ProductRecognition.Products.Response.Promotions? = nil, storeDetection: ProductRecognition.Products.Response.StoreDetection? = nil)
     public struct Product : Swift.Decodable {
       public var order: Swift.Int
       public var upc: Swift.String?
@@ -566,6 +638,11 @@ public struct Products {
       public var bannerText: Swift.String?
       public init(from decoder: Swift.Decoder) throws
     }
+    public struct StoreDetection : Swift.Decodable {
+      public var store: ProductRecognition.Store?
+      public var suggestions: [ProductRecognition.Store]
+      public init(from decoder: Swift.Decoder) throws
+    }
     public init(from decoder: Swift.Decoder) throws
   }
 }
@@ -621,10 +698,12 @@ public struct Products {
 public struct SDKConfiguration {
   public static var shared: ProductRecognition.SDKConfiguration
   public var singlePhotoBoundingBoxesToShow: ProductRecognition.SDKConfiguration.SinglePhotoBoundingBoxesToShow
+  public var singlePhotoCompressionQuality: CoreFoundation.CGFloat
   public var shouldShowDebugData: Swift.Bool
   public var shouldShowPromotions: Swift.Bool
   public var shouldUseProductionAPI: Swift.Bool
   public var countryIsoAlpha2Code: Swift.String
+  public var storeDetection: ProductRecognition.StoreDetectionConfiguration
   public enum SinglePhotoBoundingBoxesToShow {
     case rawBoundingBoxes
     case trackingBoxes
@@ -644,7 +723,39 @@ public protocol ContoursExtractorDelegate : AnyObject {
   func contoursExtractor(frame: ARKit.ARFrame, contoursImage: UIKit.UIImage)
   func contoursExtractor(lastProcessingTime: Swift.UInt64)
 }
+@objc @_hasMissingDesignatedInitializers final public class LocationManager : ObjectiveC.NSObject {
+  public static let shared: ProductRecognition.LocationManager
+  final public var canEnableStoreDetection: Swift.Bool {
+    get
+  }
+  final public var userLocation: ProductRecognition.UserLocation? {
+    get
+  }
+  final public func startUpdatingLocation()
+  final public func stopUpdatingLocation()
+  @objc deinit
+}
+extension ProductRecognition.LocationManager : CoreLocation.CLLocationManagerDelegate {
+  @objc final public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc final public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+}
+public struct UserLocation {
+}
+@_hasMissingDesignatedInitializers final public class NetworkManager {
+  public static var shared: ProductRecognition.NetworkManager
+  final public var isReachable: Swift.Bool {
+    get
+  }
+  final public var isReachableOnCellular: Swift.Bool {
+    get
+  }
+  final public var didUpdateNetworkConnectionStatus: ((Swift.Bool) -> Swift.Void)?
+  @objc deinit
+  final public func startMonitoring()
+  final public func stopMonitoring()
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ScanActivityViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var capturedImage: UIKit.UIImage?
   @_Concurrency.MainActor(unsafe) public var noResultText: Swift.String {
     get
     set
@@ -684,6 +795,8 @@ public struct ScanAgainConfiguration {
   public var text: Swift.String
   public var textFont: UIKit.UIFont
   public var textColor: UIKit.UIColor
+  public var storeIconImage: UIKit.UIImage?
+  public var storeLabelColor: UIKit.UIColor
   public init()
 }
 public struct Promo : Swift.Decodable {
@@ -694,7 +807,20 @@ extension ProductRecognition.Promo : Swift.Equatable {
 }
 public class ProductsRepository {
   public init()
-  public func getProductsInfo(products: [ProductRecognition.Products.Request.Product], completion: @escaping (_ productsResponse: ProductRecognition.Products.Response?) -> Swift.Void)
+  public func getProductsInfo(products: [ProductRecognition.Products.Request.Product], userLocation: ProductRecognition.UserLocation? = nil, completion: @escaping (_ productsResponse: ProductRecognition.Products.Response?) -> Swift.Void)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ScanAgainStoreView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var iconView: UIKit.UIImageView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var label: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(storeName: Swift.String, frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ResultListCell : UIKit.UITableViewCell {
@@ -756,5 +882,12 @@ public struct ScanActivityConfiguration {
   public var textColor: UIKit.UIColor
   public init()
 }
+@_hasMissingDesignatedInitializers final public class SDKManager {
+  public static func setLicenseKey(_ licenseKey: Swift.String, completion: ((_ success: Swift.Bool) -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension ProductRecognition.StoreDetectionConfiguration.UnitOfDistance : Swift.Equatable {}
+extension ProductRecognition.StoreDetectionConfiguration.UnitOfDistance : Swift.Hashable {}
+extension ProductRecognition.StoreDetectionConfiguration.UnitOfDistance : Swift.RawRepresentable {}
 extension ProductRecognition.SDKConfiguration.SinglePhotoBoundingBoxesToShow : Swift.Equatable {}
 extension ProductRecognition.SDKConfiguration.SinglePhotoBoundingBoxesToShow : Swift.Hashable {}
