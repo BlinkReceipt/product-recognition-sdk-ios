@@ -84,7 +84,7 @@ Under [Samples](Samples) directory, you can find a simple demo app that is using
 func application(_ application: UIApplication, didFinishLaunchingWithOptions
                  launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-  AuthManager.shared.loadAuthTokenForCurrentDevice(licenseKey: <license key string>)
+  SDKManager.setLicenseKey(licenseKey: <license key string>)
   
   return true
 }
@@ -92,7 +92,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions
 ### Add to Info.plist
 | Key | Value |
 | --- | --- |
-| Privacy - Camera Usage Description | Camera access is needed to capture images of products |
+| Privacy - Camera Usage Description | Camera access is required to run this app |
+| Privacy - Photo Library Additions Usage Description | Allow access to save your photo |
+| Privacy - Location When In Use Usage Description | The app uses your location to detect the current store |
 ### Usage
 ```swift
 import ProductRecognition
