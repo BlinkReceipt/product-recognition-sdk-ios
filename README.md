@@ -126,9 +126,23 @@ singlePhotoVC.didCaptureImage = { (image, url) in
   // ...
 }
 ```
-> _The block to execute after the result view controller processed the captured image and received the results. This block has no return value and takes two arguments. The first is an array of products received as a result of processing the captured image. The second is a URL of the processed captured image. This parameter may be NULL._
+> _The block to execute after the result view controller processed the captured image and received the results.
+This block has no return value and takes four arguments.
+The first is an array of products received as a result of processing the captured image.
+The second is a URL of the processed captured image.
+The third is a data containing the `session ID` and `frame ID` of the scanned image.
+The fourth is an object which contains the detected `Store` (if `UserLocation` is provided) and an array of suggested ``Store``s  within  the set search radius.
+This parameter may be NULL._
 ```swift
-singlePhotoVC.didReceiveResults = { (products, imageURL) in
+singlePhotoVC.didReceiveResults = { (products, imageURL, session, storeDetection) in
+  // ...
+}
+```
+> _The block that executes when the camera session has started or stopped.
+This block has no return value and takes a single argument that determines whether the camera session is running.
+This parameter may be NULL._
+```swift
+singlePhotoVC.didUpdateCaptureSessionRunning = { isRunning in
   // ...
 }
 ```
