@@ -430,6 +430,7 @@ SWIFT_CLASS("_TtC18ProductRecognition13SinglePhotoVC")
 
 
 
+
 #endif
 #if defined(__cplusplus)
 #endif

@@ -5448,6 +5448,158 @@
           },
           {
             "kind": "Var",
+            "name": "didUpdateCaptureSessionRunning",
+            "printedName": "didUpdateCaptureSessionRunning",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ProductRecognition13SinglePhotoVCC30didUpdateCaptureSessionRunningySbcSgvp",
+            "mangledName": "$s18ProductRecognition13SinglePhotoVCC30didUpdateCaptureSessionRunningySbcSgvp",
+            "moduleName": "ProductRecognition",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ProductRecognition13SinglePhotoVCC30didUpdateCaptureSessionRunningySbcSgvg",
+                "mangledName": "$s18ProductRecognition13SinglePhotoVCC30didUpdateCaptureSessionRunningySbcSgvg",
+                "moduleName": "ProductRecognition",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((Swift.Bool) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ProductRecognition13SinglePhotoVCC30didUpdateCaptureSessionRunningySbcSgvs",
+                "mangledName": "$s18ProductRecognition13SinglePhotoVCC30didUpdateCaptureSessionRunningySbcSgvs",
+                "moduleName": "ProductRecognition",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ProductRecognition13SinglePhotoVCC30didUpdateCaptureSessionRunningySbcSgvM",
+                "mangledName": "$s18ProductRecognition13SinglePhotoVCC30didUpdateCaptureSessionRunningySbcSgvM",
+                "moduleName": "ProductRecognition",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "shouldPresentResults",
             "printedName": "shouldPresentResults",
             "children": [
@@ -40514,140 +40666,140 @@
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2340,
+      "offset": 2649,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2606,
+      "offset": 2915,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 2790,
+      "offset": 3099,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 4725,
+      "offset": 5034,
       "length": 3,
       "value": "264"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 4738,
+      "offset": 5047,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 4786,
+      "offset": 5095,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 4957,
+      "offset": 5266,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 5165,
+      "offset": 5474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 5215,
+      "offset": 5524,
       "length": 9,
       "value": "\"shutter\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 5788,
+      "offset": 6097,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 6019,
+      "offset": 6328,
       "length": 73,
       "value": "\"com.microblink.in-store-discovery_SinglePhotoVC_photoCaptureSerialQueue\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 6159,
+      "offset": 6468,
       "length": 75,
       "value": "\"com.microblink.in-store-discovery_SinglePhotoVC_imageProcessorSerialQueue\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 6301,
+      "offset": 6610,
       "length": 75,
       "value": "\"com.microblink.in-store-discovery_SinglePhotoVC_captureSessionSerialQueue\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6600,
+      "offset": 6909,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6666,
+      "offset": 6975,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6930,
+      "offset": 7239,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 7051,
+      "offset": 7360,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7223,
+      "offset": 7532,
       "length": 37,
       "value": "\"Session ID: \""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7256,
+      "offset": 7565,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7259,
+      "offset": 7568,
       "length": 1,
       "value": "\"\""
     },
@@ -44203,14 +44355,14 @@
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Extensions\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6101,
+      "offset": 6403,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Extensions\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6284,
+      "offset": 6586,
       "length": 1,
       "value": "1"
     },

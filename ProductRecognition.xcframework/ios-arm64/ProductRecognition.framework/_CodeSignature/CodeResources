@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ProductRecognition-Swift.h</key>
 		<data>
-		cYNkXNYPwMoGMiA9XYHgNQKV0xM=
+		h7MusMVl0aErQOALAuq/XOd00Kg=
 		</data>
 		<key>Headers/ProductRecognition.h</key>
 		<data>
@@ -98,23 +98,23 @@
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		QGndlcTzAqp8VQdFZCtTENhnCfs=
+		gZAvQ2XzzGlDzLVL/7C64657efo=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		kerP0KW23A5ElFsc6+3H9Wnsq+Q=
+		qH11JBO8wk3r0+Qs9wZ2gWAyEIE=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		vPAw+oBT485gG68qf+mYDAcoFz8=
+		KNQuqPepgUL3okYlGFkXN+q+Vao=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		kerP0KW23A5ElFsc6+3H9Wnsq+Q=
+		qH11JBO8wk3r0+Qs9wZ2gWAyEIE=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		meuThLn1LV2tnk4TZWINy6LC3B8=
+		lKMl8g8/sZCLszv3m2LTlMez67c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -251,7 +251,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5PQV3IZuag6Ke3LkwyNHAifSfttZ7+cERW65nWWyGjg=
+			iFPEYTuKhiDJMa3bZwTgHaFcXtmjlb/kyFVDgHXDQ9E=
 			</data>
 		</dict>
 		<key>Headers/ProductRecognition.h</key>
@@ -321,35 +321,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Feq7C5ZZwW8JEd18oPAgMtySTiaVKjX5dJowopkdtxc=
+			rXJB6CzxJ1+Jnu1nnxBU4gV3NZIAw9CgP5f99WQKFAc=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kY3hMlyyP/bvVhR4NkA/prqmepi1e3v0VdRY7JrI4LY=
+			0dqYrlZ+2E4Ulgf9HQ4kgGDxv4KP31M98vs+Y7qeZC8=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2xF3lAhRaV47iFKrd6CbMetFep/f4Vs3ASnH8qvgvIE=
+			krKc5SfFooO1mScQyPgw3JwCo1dxgcAKIW9vlO6WOgk=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kY3hMlyyP/bvVhR4NkA/prqmepi1e3v0VdRY7JrI4LY=
+			0dqYrlZ+2E4Ulgf9HQ4kgGDxv4KP31M98vs+Y7qeZC8=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/1OTP8gCVr83cQgEn3smrWa5fFO83n9dI+kxZV7dG+U=
+			3ZoI+zIVqYpJmGU/akv1n6GliBe9zPDRxZsjTBUO4bE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

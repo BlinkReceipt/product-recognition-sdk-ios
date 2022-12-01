@@ -138,6 +138,7 @@ public struct ResultIndicatorConfiguration {
   @_Concurrency.MainActor(unsafe) open var captureRegion: CoreFoundation.CGRect
   @_Concurrency.MainActor(unsafe) open var didCaptureImage: ((UIKit.UIImage, Foundation.URL?) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) open var didReceiveResults: (([ProductRecognition.ProductInfo], Foundation.URL?, ProductRecognition.Products.StaticDiscovery.Response.Session?, ProductRecognition.Products.StaticDiscovery.Response.StoreDetection?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var didUpdateCaptureSessionRunning: ((Swift.Bool) -> Swift.Void)?
   @_Concurrency.MainActor(unsafe) open var shouldPresentResults: Swift.Bool
   @_Concurrency.MainActor(unsafe) open var shouldScanCapturedImage: Swift.Bool
   @_Concurrency.MainActor(unsafe) open var shouldShowPromotions: Swift.Bool
