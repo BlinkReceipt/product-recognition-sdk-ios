@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ProductRecognition-Swift.h</key>
 		<data>
-		h7MusMVl0aErQOALAuq/XOd00Kg=
+		rsZJhOJgES0rSQk55CH9duUb7XY=
 		</data>
 		<key>Headers/ProductRecognition.h</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gZAvQ2XzzGlDzLVL/7C64657efo=
+		8C3zzZV2OcquLTqFBP/AcpOVu6w=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		qH11JBO8wk3r0+Qs9wZ2gWAyEIE=
+		+vCPy3oSoO8C+U4jKmzqJMRLVZY=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		qH11JBO8wk3r0+Qs9wZ2gWAyEIE=
+		+vCPy3oSoO8C+U4jKmzqJMRLVZY=
 		</data>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		lKMl8g8/sZCLszv3m2LTlMez67c=
+		J0lLN93MyQCQ3udzZrd/mWVacNE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -251,7 +251,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iFPEYTuKhiDJMa3bZwTgHaFcXtmjlb/kyFVDgHXDQ9E=
+			0wILqKql94wTh2PGD0iiqV8NRRrG7tXAkXghi7oj0wo=
 			</data>
 		</dict>
 		<key>Headers/ProductRecognition.h</key>
@@ -321,14 +321,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rXJB6CzxJ1+Jnu1nnxBU4gV3NZIAw9CgP5f99WQKFAc=
+			3uS/SmpO1xlCEWaxELkichTGGsV7Stu8LWRsBaLk0eQ=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0dqYrlZ+2E4Ulgf9HQ4kgGDxv4KP31M98vs+Y7qeZC8=
+			Jls/uSWuWua8vSeOWUDH+Xeug5JlIt2mE2nwW4yBDcE=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -342,14 +342,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0dqYrlZ+2E4Ulgf9HQ4kgGDxv4KP31M98vs+Y7qeZC8=
+			Jls/uSWuWua8vSeOWUDH+Xeug5JlIt2mE2nwW4yBDcE=
 			</data>
 		</dict>
 		<key>Modules/ProductRecognition.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ZoI+zIVqYpJmGU/akv1n6GliBe9zPDRxZsjTBUO4bE=
+			uRwQKC2XsYKX/ieBuvylWZI80nVAxyVqttwY68gPJXQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

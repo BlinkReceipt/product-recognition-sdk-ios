@@ -5994,8 +5994,8 @@
           },
           {
             "kind": "Function",
-            "name": "viewWillAppear",
-            "printedName": "viewWillAppear(_:)",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6010,18 +6010,18 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@ProductRecognition@objc(cs)SinglePhotoVC(im)viewWillAppear:",
-            "mangledName": "$s18ProductRecognition13SinglePhotoVCC14viewWillAppearyySbF",
+            "usr": "c:@M@ProductRecognition@objc(cs)SinglePhotoVC(im)viewDidAppear:",
+            "mangledName": "$s18ProductRecognition13SinglePhotoVCC13viewDidAppearyySbF",
             "moduleName": "ProductRecognition",
             "overriding": true,
             "isOpen": true,
-            "objc_name": "viewWillAppear:",
+            "objc_name": "viewDidAppear:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
               "Custom",
-              "AccessControl",
-              "Override"
+              "Override",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -40757,49 +40757,56 @@
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6909,
+      "offset": 6969,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6975,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7239,
+      "offset": 7035,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 7360,
+      "offset": 7091,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7351,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7472,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7532,
+      "offset": 7644,
       "length": 37,
       "value": "\"Session ID: \""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7565,
+      "offset": 7677,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7568,
+      "offset": 7680,
       "length": 1,
       "value": "\"\""
     },

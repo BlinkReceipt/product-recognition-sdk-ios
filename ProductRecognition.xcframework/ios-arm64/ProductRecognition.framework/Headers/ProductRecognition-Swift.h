@@ -412,7 +412,7 @@ SWIFT_CLASS("_TtC18ProductRecognition18ScanAgainStoreView")
 SWIFT_CLASS("_TtC18ProductRecognition13SinglePhotoVC")
 @interface SinglePhotoVC : UIViewController <AVCapturePhotoCaptureDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 - (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
