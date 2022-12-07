@@ -2712,6 +2712,20 @@
       },
       {
         "kind": "Import",
+        "name": "CoreMedia",
+        "printedName": "CoreMedia",
+        "declKind": "Import",
+        "moduleName": "ProductRecognition"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "ProductRecognition"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -13397,116 +13411,6 @@
           },
           {
             "kind": "Var",
-            "name": "bannerId",
-            "printedName": "bannerId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV8bannerIdSiSgvp",
-            "mangledName": "$s18ProductRecognition5StoreV8bannerIdSiSgvp",
-            "moduleName": "ProductRecognition",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8bannerIdSiSgvg",
-                "mangledName": "$s18ProductRecognition5StoreV8bannerIdSiSgvg",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8bannerIdSiSgvs",
-                "mangledName": "$s18ProductRecognition5StoreV8bannerIdSiSgvs",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8bannerIdSiSgvM",
-                "mangledName": "$s18ProductRecognition5StoreV8bannerIdSiSgvM",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "name",
             "printedName": "name",
             "children": [
@@ -13617,8 +13521,8 @@
           },
           {
             "kind": "Var",
-            "name": "merchantName",
-            "printedName": "merchantName",
+            "name": "addressLine1",
+            "printedName": "addressLine1",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13636,8 +13540,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV12merchantNameSSSgvp",
-            "mangledName": "$s18ProductRecognition5StoreV12merchantNameSSSgvp",
+            "usr": "s:18ProductRecognition5StoreV12addressLine1SSSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV12addressLine1SSSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
               "HasInitialValue",
@@ -13667,8 +13571,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV12merchantNameSSSgvg",
-                "mangledName": "$s18ProductRecognition5StoreV12merchantNameSSSgvg",
+                "usr": "s:18ProductRecognition5StoreV12addressLine1SSSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine1SSSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13699,8 +13603,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV12merchantNameSSSgvs",
-                "mangledName": "$s18ProductRecognition5StoreV12merchantNameSSSgvs",
+                "usr": "s:18ProductRecognition5StoreV12addressLine1SSSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine1SSSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -13717,8 +13621,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV12merchantNameSSSgvM",
-                "mangledName": "$s18ProductRecognition5StoreV12merchantNameSSSgvM",
+                "usr": "s:18ProductRecognition5StoreV12addressLine1SSSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine1SSSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -13727,118 +13631,8 @@
           },
           {
             "kind": "Var",
-            "name": "locationNumber",
-            "printedName": "locationNumber",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV14locationNumberSiSgvp",
-            "mangledName": "$s18ProductRecognition5StoreV14locationNumberSiSgvp",
-            "moduleName": "ProductRecognition",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV14locationNumberSiSgvg",
-                "mangledName": "$s18ProductRecognition5StoreV14locationNumberSiSgvg",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV14locationNumberSiSgvs",
-                "mangledName": "$s18ProductRecognition5StoreV14locationNumberSiSgvs",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV14locationNumberSiSgvM",
-                "mangledName": "$s18ProductRecognition5StoreV14locationNumberSiSgvM",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "phoneNumber",
-            "printedName": "phoneNumber",
+            "name": "addressLine2",
+            "printedName": "addressLine2",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13856,8 +13650,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV11phoneNumberSSSgvp",
-            "mangledName": "$s18ProductRecognition5StoreV11phoneNumberSSSgvp",
+            "usr": "s:18ProductRecognition5StoreV12addressLine2SSSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV12addressLine2SSSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
               "HasInitialValue",
@@ -13887,8 +13681,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11phoneNumberSSSgvg",
-                "mangledName": "$s18ProductRecognition5StoreV11phoneNumberSSSgvg",
+                "usr": "s:18ProductRecognition5StoreV12addressLine2SSSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine2SSSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13919,8 +13713,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11phoneNumberSSSgvs",
-                "mangledName": "$s18ProductRecognition5StoreV11phoneNumberSSSgvs",
+                "usr": "s:18ProductRecognition5StoreV12addressLine2SSSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine2SSSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -13937,8 +13731,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11phoneNumberSSSgvM",
-                "mangledName": "$s18ProductRecognition5StoreV11phoneNumberSSSgvM",
+                "usr": "s:18ProductRecognition5StoreV12addressLine2SSSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine2SSSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -13947,21 +13741,30 @@
           },
           {
             "kind": "Var",
-            "name": "fullAddress",
-            "printedName": "fullAddress",
+            "name": "addressLine3",
+            "printedName": "addressLine3",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV11fullAddressSSvp",
-            "mangledName": "$s18ProductRecognition5StoreV11fullAddressSSvp",
+            "usr": "s:18ProductRecognition5StoreV12addressLine3SSSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV12addressLine3SSSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -13974,14 +13777,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11fullAddressSSvg",
-                "mangledName": "$s18ProductRecognition5StoreV11fullAddressSSvg",
+                "usr": "s:18ProductRecognition5StoreV12addressLine3SSSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine3SSSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13998,14 +13809,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11fullAddressSSvs",
-                "mangledName": "$s18ProductRecognition5StoreV11fullAddressSSvs",
+                "usr": "s:18ProductRecognition5StoreV12addressLine3SSSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine3SSSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -14022,93 +13841,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11fullAddressSSvM",
-                "mangledName": "$s18ProductRecognition5StoreV11fullAddressSSvM",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "address",
-            "printedName": "address",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV7addressSSvp",
-            "mangledName": "$s18ProductRecognition5StoreV7addressSSvp",
-            "moduleName": "ProductRecognition",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV7addressSSvg",
-                "mangledName": "$s18ProductRecognition5StoreV7addressSSvg",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV7addressSSvs",
-                "mangledName": "$s18ProductRecognition5StoreV7addressSSvs",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV7addressSSvM",
-                "mangledName": "$s18ProductRecognition5StoreV7addressSSvM",
+                "usr": "s:18ProductRecognition5StoreV12addressLine3SSSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV12addressLine3SSSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -14122,16 +13856,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV4citySSvp",
-            "mangledName": "$s18ProductRecognition5StoreV4citySSvp",
+            "usr": "s:18ProductRecognition5StoreV4citySSSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV4citySSSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -14144,14 +13887,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV4citySSvg",
-                "mangledName": "$s18ProductRecognition5StoreV4citySSvg",
+                "usr": "s:18ProductRecognition5StoreV4citySSSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV4citySSSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -14168,14 +13919,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV4citySSvs",
-                "mangledName": "$s18ProductRecognition5StoreV4citySSvs",
+                "usr": "s:18ProductRecognition5StoreV4citySSSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV4citySSSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -14192,8 +13951,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV4citySSvM",
-                "mangledName": "$s18ProductRecognition5StoreV4citySSvM",
+                "usr": "s:18ProductRecognition5StoreV4citySSSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV4citySSSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -14422,286 +14181,6 @@
           },
           {
             "kind": "Var",
-            "name": "managerName",
-            "printedName": "managerName",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV11managerNameSSSgvp",
-            "mangledName": "$s18ProductRecognition5StoreV11managerNameSSSgvp",
-            "moduleName": "ProductRecognition",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11managerNameSSSgvg",
-                "mangledName": "$s18ProductRecognition5StoreV11managerNameSSSgvg",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11managerNameSSSgvs",
-                "mangledName": "$s18ProductRecognition5StoreV11managerNameSSSgvs",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11managerNameSSSgvM",
-                "mangledName": "$s18ProductRecognition5StoreV11managerNameSSSgvM",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "latitude",
-            "printedName": "latitude",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV8latitudeSdvp",
-            "mangledName": "$s18ProductRecognition5StoreV8latitudeSdvp",
-            "moduleName": "ProductRecognition",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8latitudeSdvg",
-                "mangledName": "$s18ProductRecognition5StoreV8latitudeSdvg",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8latitudeSdvs",
-                "mangledName": "$s18ProductRecognition5StoreV8latitudeSdvs",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8latitudeSdvM",
-                "mangledName": "$s18ProductRecognition5StoreV8latitudeSdvM",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "longitude",
-            "printedName": "longitude",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV9longitudeSdvp",
-            "mangledName": "$s18ProductRecognition5StoreV9longitudeSdvp",
-            "moduleName": "ProductRecognition",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV9longitudeSdvg",
-                "mangledName": "$s18ProductRecognition5StoreV9longitudeSdvg",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV9longitudeSdvs",
-                "mangledName": "$s18ProductRecognition5StoreV9longitudeSdvs",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV9longitudeSdvM",
-                "mangledName": "$s18ProductRecognition5StoreV9longitudeSdvM",
-                "moduleName": "ProductRecognition",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "country",
             "printedName": "country",
             "children": [
@@ -14812,27 +14291,27 @@
           },
           {
             "kind": "Var",
-            "name": "googlePlaceId",
-            "printedName": "googlePlaceId",
+            "name": "latitude",
+            "printedName": "latitude",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Double?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV13googlePlaceIdSSSgvp",
-            "mangledName": "$s18ProductRecognition5StoreV13googlePlaceIdSSSgvp",
+            "usr": "s:18ProductRecognition5StoreV8latitudeSdSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV8latitudeSdSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
               "HasInitialValue",
@@ -14849,21 +14328,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Double?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV13googlePlaceIdSSSgvg",
-                "mangledName": "$s18ProductRecognition5StoreV13googlePlaceIdSSSgvg",
+                "usr": "s:18ProductRecognition5StoreV8latitudeSdSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV8latitudeSdSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -14881,21 +14360,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Double?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV13googlePlaceIdSSSgvs",
-                "mangledName": "$s18ProductRecognition5StoreV13googlePlaceIdSSSgvs",
+                "usr": "s:18ProductRecognition5StoreV8latitudeSdSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV8latitudeSdSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -14912,8 +14391,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV13googlePlaceIdSSSgvM",
-                "mangledName": "$s18ProductRecognition5StoreV13googlePlaceIdSSSgvM",
+                "usr": "s:18ProductRecognition5StoreV8latitudeSdSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV8latitudeSdSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -14922,27 +14401,27 @@
           },
           {
             "kind": "Var",
-            "name": "yelpPlaceId",
-            "printedName": "yelpPlaceId",
+            "name": "longitude",
+            "printedName": "longitude",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Double?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV11yelpPlaceIdSSSgvp",
-            "mangledName": "$s18ProductRecognition5StoreV11yelpPlaceIdSSSgvp",
+            "usr": "s:18ProductRecognition5StoreV9longitudeSdSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV9longitudeSdSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
               "HasInitialValue",
@@ -14959,21 +14438,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Double?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11yelpPlaceIdSSSgvg",
-                "mangledName": "$s18ProductRecognition5StoreV11yelpPlaceIdSSSgvg",
+                "usr": "s:18ProductRecognition5StoreV9longitudeSdSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV9longitudeSdSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -14991,21 +14470,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Double?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11yelpPlaceIdSSSgvs",
-                "mangledName": "$s18ProductRecognition5StoreV11yelpPlaceIdSSSgvs",
+                "usr": "s:18ProductRecognition5StoreV9longitudeSdSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV9longitudeSdSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -15022,8 +14501,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV11yelpPlaceIdSSSgvM",
-                "mangledName": "$s18ProductRecognition5StoreV11yelpPlaceIdSSSgvM",
+                "usr": "s:18ProductRecognition5StoreV9longitudeSdSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV9longitudeSdSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -15032,8 +14511,8 @@
           },
           {
             "kind": "Var",
-            "name": "storeTypes",
-            "printedName": "storeTypes",
+            "name": "address",
+            "printedName": "address",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15051,8 +14530,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV10storeTypesSSSgvp",
-            "mangledName": "$s18ProductRecognition5StoreV10storeTypesSSSgvp",
+            "usr": "s:18ProductRecognition5StoreV7addressSSSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV7addressSSSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
               "HasInitialValue",
@@ -15082,8 +14561,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV10storeTypesSSSgvg",
-                "mangledName": "$s18ProductRecognition5StoreV10storeTypesSSSgvg",
+                "usr": "s:18ProductRecognition5StoreV7addressSSSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV7addressSSSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -15114,8 +14593,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV10storeTypesSSSgvs",
-                "mangledName": "$s18ProductRecognition5StoreV10storeTypesSSSgvs",
+                "usr": "s:18ProductRecognition5StoreV7addressSSSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV7addressSSSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -15132,8 +14611,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV10storeTypesSSSgvM",
-                "mangledName": "$s18ProductRecognition5StoreV10storeTypesSSSgvM",
+                "usr": "s:18ProductRecognition5StoreV7addressSSSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV7addressSSSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -15147,16 +14626,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV8distanceSdvp",
-            "mangledName": "$s18ProductRecognition5StoreV8distanceSdvp",
+            "usr": "s:18ProductRecognition5StoreV8distanceSdSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV8distanceSdSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -15169,14 +14657,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8distanceSdvg",
-                "mangledName": "$s18ProductRecognition5StoreV8distanceSdvg",
+                "usr": "s:18ProductRecognition5StoreV8distanceSdSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV8distanceSdSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -15193,14 +14689,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8distanceSdvs",
-                "mangledName": "$s18ProductRecognition5StoreV8distanceSdvs",
+                "usr": "s:18ProductRecognition5StoreV8distanceSdSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV8distanceSdSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -15217,8 +14721,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV8distanceSdvM",
-                "mangledName": "$s18ProductRecognition5StoreV8distanceSdvM",
+                "usr": "s:18ProductRecognition5StoreV8distanceSdSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV8distanceSdSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -15232,16 +14736,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18ProductRecognition5StoreV5unitsSSvp",
-            "mangledName": "$s18ProductRecognition5StoreV5unitsSSvp",
+            "usr": "s:18ProductRecognition5StoreV5unitsSSSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV5unitsSSSgvp",
             "moduleName": "ProductRecognition",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -15254,14 +14767,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV5unitsSSvg",
-                "mangledName": "$s18ProductRecognition5StoreV5unitsSSvg",
+                "usr": "s:18ProductRecognition5StoreV5unitsSSSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV5unitsSSSgvg",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "get"
@@ -15278,14 +14799,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV5unitsSSvs",
-                "mangledName": "$s18ProductRecognition5StoreV5unitsSSvs",
+                "usr": "s:18ProductRecognition5StoreV5unitsSSSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV5unitsSSSgvs",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "set"
@@ -15302,8 +14831,118 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18ProductRecognition5StoreV5unitsSSvM",
-                "mangledName": "$s18ProductRecognition5StoreV5unitsSSvM",
+                "usr": "s:18ProductRecognition5StoreV5unitsSSSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV5unitsSSSgvM",
+                "moduleName": "ProductRecognition",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "merchantName",
+            "printedName": "merchantName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ProductRecognition5StoreV12merchantNameSSSgvp",
+            "mangledName": "$s18ProductRecognition5StoreV12merchantNameSSSgvp",
+            "moduleName": "ProductRecognition",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ProductRecognition5StoreV12merchantNameSSSgvg",
+                "mangledName": "$s18ProductRecognition5StoreV12merchantNameSSSgvg",
+                "moduleName": "ProductRecognition",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ProductRecognition5StoreV12merchantNameSSSgvs",
+                "mangledName": "$s18ProductRecognition5StoreV12merchantNameSSSgvs",
+                "moduleName": "ProductRecognition",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ProductRecognition5StoreV12merchantNameSSSgvM",
+                "mangledName": "$s18ProductRecognition5StoreV12merchantNameSSSgvM",
                 "moduleName": "ProductRecognition",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -40778,35 +40417,35 @@
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 7351,
+      "offset": 7449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 7472,
+      "offset": 7570,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7644,
+      "offset": 7757,
       "length": 37,
       "value": "\"Session ID: \""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7677,
+      "offset": 7790,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/SinglePhotoVC.swift",
       "kind": "StringLiteral",
-      "offset": 7680,
+      "offset": 7793,
       "length": 1,
       "value": "\"\""
     },
@@ -41485,226 +41124,72 @@
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
       "kind": "StringLiteral",
-      "offset": 4168,
-      "length": 11,
-      "value": "\"banner_id\""
+      "offset": 3380,
+      "length": 16,
+      "value": "\"address_line_1\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
       "kind": "StringLiteral",
-      "offset": 4226,
+      "offset": 3425,
+      "length": 16,
+      "value": "\"address_line_2\""
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
+      "kind": "StringLiteral",
+      "offset": 3470,
+      "length": 16,
+      "value": "\"address_line_3\""
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
+      "kind": "StringLiteral",
+      "offset": 3547,
+      "length": 10,
+      "value": "\"zip_code\""
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
+      "kind": "StringLiteral",
+      "offset": 3714,
       "length": 15,
       "value": "\"merchant_name\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
       "kind": "StringLiteral",
-      "offset": 4272,
-      "length": 23,
-      "value": "\"store_location_number\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4323,
-      "length": 20,
-      "value": "\"store_phone_number\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4371,
-      "length": 14,
-      "value": "\"full_address\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4409,
-      "length": 15,
-      "value": "\"store_address\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4445,
-      "length": 12,
-      "value": "\"store_city\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4479,
-      "length": 13,
-      "value": "\"store_state\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4516,
+      "offset": 3380,
       "length": 16,
-      "value": "\"store_zip_code\""
+      "value": "\"address_line_1\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
       "kind": "StringLiteral",
-      "offset": 4560,
-      "length": 20,
-      "value": "\"store_manager_name\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4605,
+      "offset": 3425,
       "length": 16,
-      "value": "\"store_latitude\""
+      "value": "\"address_line_2\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
       "kind": "StringLiteral",
-      "offset": 4647,
-      "length": 17,
-      "value": "\"store_longitude\""
+      "offset": 3470,
+      "length": 16,
+      "value": "\"address_line_3\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
       "kind": "StringLiteral",
-      "offset": 4688,
-      "length": 15,
-      "value": "\"store_country\""
+      "offset": 3547,
+      "length": 10,
+      "value": "\"zip_code\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
       "kind": "StringLiteral",
-      "offset": 4733,
-      "length": 17,
-      "value": "\"google_place_id\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4778,
-      "length": 15,
-      "value": "\"yelp_place_id\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4820,
-      "length": 13,
-      "value": "\"store_types\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4168,
-      "length": 11,
-      "value": "\"banner_id\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4226,
+      "offset": 3714,
       "length": 15,
       "value": "\"merchant_name\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4272,
-      "length": 23,
-      "value": "\"store_location_number\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4323,
-      "length": 20,
-      "value": "\"store_phone_number\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4371,
-      "length": 14,
-      "value": "\"full_address\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4409,
-      "length": 15,
-      "value": "\"store_address\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4445,
-      "length": 12,
-      "value": "\"store_city\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4479,
-      "length": 13,
-      "value": "\"store_state\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4516,
-      "length": 16,
-      "value": "\"store_zip_code\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4560,
-      "length": 20,
-      "value": "\"store_manager_name\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4605,
-      "length": 16,
-      "value": "\"store_latitude\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4647,
-      "length": 17,
-      "value": "\"store_longitude\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4688,
-      "length": 15,
-      "value": "\"store_country\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4733,
-      "length": 17,
-      "value": "\"google_place_id\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4778,
-      "length": 15,
-      "value": "\"yelp_place_id\""
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Data\/Store.swift",
-      "kind": "StringLiteral",
-      "offset": 4820,
-      "length": 13,
-      "value": "\"store_types\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/InStoreDiscoveryCore\/FeaturesExtractor\/FeaturesExtractor.swift",
@@ -42397,14 +41882,14 @@
       "kind": "IntegerLiteral",
       "offset": 1525,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Managers\/StaticDiscoveryManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1723,
       "length": 2,
-      "value": "10"
+      "value": "20"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Managers\/StaticDiscoveryManager.swift",
@@ -44355,21 +43840,21 @@
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Extensions\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 4897,
+      "offset": 5057,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Extensions\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6403,
+      "offset": 6563,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Extensions\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6586,
+      "offset": 6746,
       "length": 1,
       "value": "1"
     },

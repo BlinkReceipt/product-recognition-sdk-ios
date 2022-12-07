@@ -5,6 +5,7 @@
 import ARKit
 import AVFoundation
 import CoreLocation
+import CoreMedia
 import CoreMotion
 import Foundation
 import Network
@@ -296,25 +297,20 @@ public struct ResultListConfiguration {
 }
 public struct Store : Swift.Decodable {
   public var id: Swift.Int
-  public var bannerId: Swift.Int?
   public var name: Swift.String?
-  public var merchantName: Swift.String?
-  public var locationNumber: Swift.Int?
-  public var phoneNumber: Swift.String?
-  public var fullAddress: Swift.String
-  public var address: Swift.String
-  public var city: Swift.String
+  public var addressLine1: Swift.String?
+  public var addressLine2: Swift.String?
+  public var addressLine3: Swift.String?
+  public var city: Swift.String?
   public var state: Swift.String?
   public var zipCode: Swift.String?
-  public var managerName: Swift.String?
-  public var latitude: Swift.Double
-  public var longitude: Swift.Double
   public var country: Swift.String?
-  public var googlePlaceId: Swift.String?
-  public var yelpPlaceId: Swift.String?
-  public var storeTypes: Swift.String?
-  public var distance: Swift.Double
-  public var units: Swift.String
+  public var latitude: Swift.Double?
+  public var longitude: Swift.Double?
+  public var address: Swift.String?
+  public var distance: Swift.Double?
+  public var units: Swift.String?
+  public var merchantName: Swift.String?
   public init(from decoder: Swift.Decoder) throws
 }
 public class FeaturesExtractor {
