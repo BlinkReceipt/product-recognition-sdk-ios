@@ -1913,6 +1913,40 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProductInfo",
+                "printedName": "ProductRecognition.ProductInfo",
+                "usr": "s:18ProductRecognition0A4InfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProductInfo",
+                "printedName": "ProductRecognition.ProductInfo",
+                "usr": "s:18ProductRecognition0A4InfoV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ProductRecognition0A4InfoV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18ProductRecognition0A4InfoV2eeoiySbAC_ACtFZ",
+            "moduleName": "ProductRecognition",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -1922,6 +1956,15 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
         ]
       },
       {
@@ -40766,176 +40809,218 @@
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2259,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2733,
+      "offset": 2769,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2770,
+      "offset": 2806,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2875,
+      "offset": 2911,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2886,
+      "offset": 2922,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "FloatLiteral",
-      "offset": 2924,
+      "offset": 2960,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 3213,
+      "offset": 3249,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3704,
+      "offset": 3740,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3809,
+      "offset": 3845,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3820,
+      "offset": 3856,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "FloatLiteral",
-      "offset": 3858,
+      "offset": 3894,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3915,
+      "offset": 3951,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3960,
+      "offset": 3996,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3966,
+      "offset": 4002,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3976,
+      "offset": 4012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
+      "kind": "FloatLiteral",
+      "offset": 4413,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
+      "kind": "FloatLiteral",
+      "offset": 4469,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 4475,
+      "offset": 4811,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 4580,
+      "offset": 5050,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5110,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5535,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5640,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 4591,
+      "offset": 5651,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "FloatLiteral",
-      "offset": 4629,
+      "offset": 5689,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 4686,
+      "offset": 5746,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "FloatLiteral",
-      "offset": 4732,
+      "offset": 5792,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 5073,
+      "offset": 6133,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 5098,
+      "offset": 6158,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 5615,
+      "offset": 6675,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 5911,
+      "offset": 6971,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 6205,
+      "offset": 7265,
       "length": 1,
       "value": "2"
     },
@@ -42014,174 +42099,174 @@
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
       "offset": 730,
-      "length": 1,
-      "value": "0"
+      "length": 2,
+      "value": "15"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 785,
+      "offset": 786,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 795,
+      "offset": 796,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 806,
+      "offset": 807,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 816,
+      "offset": 817,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "Array",
-      "offset": 961,
+      "offset": 962,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 1493,
+      "offset": 1494,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "Array",
-      "offset": 1612,
+      "offset": 1613,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 1990,
+      "offset": 1991,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 2052,
+      "offset": 2053,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 2229,
+      "offset": 2230,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 3010,
+      "offset": 3011,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 3222,
+      "offset": 3223,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 3228,
+      "offset": 3229,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 3238,
+      "offset": 3239,
       "length": 3,
       "value": "145"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 3251,
+      "offset": 3252,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "StringLiteral",
-      "offset": 3523,
+      "offset": 3537,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 3681,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3727,
+      "offset": 3570,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 3878,
+      "offset": 3576,
       "length": 1,
-      "value": "8"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "IntegerLiteral",
-      "offset": 3929,
+      "offset": 3604,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3615,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 7367,
+      "offset": 7194,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 12361,
+      "offset": 12188,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 13820,
+      "offset": 13647,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 13843,
+      "offset": 13670,
       "length": 4,
       "value": "true"
     },
@@ -43840,21 +43925,21 @@
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Extensions\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 5057,
+      "offset": 4943,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Extensions\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6563,
+      "offset": 6449,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Extensions\/Extensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6746,
+      "offset": 6632,
       "length": 1,
       "value": "1"
     },
@@ -43871,6 +43956,13 @@
       "offset": 728,
       "length": 2,
       "value": "24"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/ScanAgainStoreView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1132,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/SinglePhoto\/ScanAgainStoreView.swift",
@@ -44288,84 +44380,147 @@
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2669,
+      "offset": 2084,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2710,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3105,
+      "offset": 3146,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3150,
+      "offset": 3191,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3156,
+      "offset": 3197,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3166,
+      "offset": 3207,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3486,
+      "offset": 3453,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3465,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3798,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3804,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 3858,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 3915,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4102,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4162,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4613,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "FloatLiteral",
-      "offset": 3532,
+      "offset": 4659,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3725,
+      "offset": 4852,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3750,
+      "offset": 4877,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4167,
+      "offset": 5294,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4357,
+      "offset": 5484,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andylim\/Dropbox\/Projects\/product-recognition-ios\/ProductRecognition\/ProductRecognition\/ProductRecognition\/Result\/ResultListCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4549,
+      "offset": 5676,
       "length": 1,
       "value": "2"
     },

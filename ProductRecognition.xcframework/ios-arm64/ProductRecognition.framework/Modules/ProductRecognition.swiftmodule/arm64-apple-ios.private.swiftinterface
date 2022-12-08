@@ -68,13 +68,14 @@ extension ProductRecognition.ResultListView : UIKit.UITableViewDelegate, UIKit.U
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
 }
-public struct ProductInfo {
+public struct ProductInfo : Swift.Equatable {
   public let order: Swift.Int
   public let productData: ProductRecognition.Products.StaticDiscovery.Response.Product
   public let promotions: [ProductRecognition.Products.StaticDiscovery.Response.PromotionDisplay]?
   public var hasPromotion: Swift.Bool {
     get
   }
+  public static func == (lhs: ProductRecognition.ProductInfo, rhs: ProductRecognition.ProductInfo) -> Swift.Bool
 }
 public class DetectionResult {
   final public let id: Swift.UInt
